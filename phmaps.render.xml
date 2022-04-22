@@ -2,12 +2,14 @@
 
 	<renderingProperty attr="roadStyle" category="ui_hidden" type="string"/>
 
+	<!-- warna tanah -->
 	<renderingAttribute name="defaultColor">
 		<case noPolygons="true" attrColorValue="#00ffffff"/>
 		<case attrColorValue="#f5ffff">
 			<apply_if nightMode="true" attrColorValue="#003333"/>
 		</case>
 	</renderingAttribute>
+
 	<renderingProperty attr="legend" name="Legend" type="boolean" possibleValues="" category="ui_hidden"/>
 <!-- Highways -->
 	<renderingAttribute name="motorwayRoadColor">
