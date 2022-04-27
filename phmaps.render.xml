@@ -11,7 +11,7 @@
 	</renderingAttribute>
 
 	<renderingProperty attr="legend" name="Legend" type="boolean" possibleValues="" category="ui_hidden"/>
-<!-- Highways -->
+	<!-- Highways -->
 	<renderingAttribute name="motorwayRoadColor">
 		<case additional="construction=yes" attrColorValue="#CABFE0">
 			<apply_if nightMode="true" attrColorValue="#48616C"/>
