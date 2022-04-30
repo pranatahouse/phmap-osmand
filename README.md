@@ -1,3 +1,3 @@
 # phmap-osmand
 
-Custom render style for Osmand Maps App.
+Custom rendering style for OsmAnd. We have two styles variant available at the moments.
