@@ -10,6 +10,9 @@
 		</case>
 	</renderingAttribute>
 
+	<renderingConstant name="buildingColorDay" value="#E7E9ED"/>
+	<renderingConstant name="buildingColorNight" value="#3f3c40"/>
+
 	<renderingProperty attr="legend" name="Legend" type="boolean" possibleValues="" category="ui_hidden"/>
 	<!-- Highways -->
 	<renderingAttribute name="motorwayRoadColor">
@@ -360,7 +363,7 @@
 	<!-- warna air -->
 	<renderingAttribute name="waterColor">
 		<case nightMode="true" attrColorValue="#20005f"/>
-		<case attrColorValue="#9FB4FC"/>
+		<case attrColorValue="#9CC0F9"/>
 	</renderingAttribute>
 	<renderingAttribute name="heathColor">
 		<case attrColorValue="#f5ffff"/>
@@ -511,11 +514,16 @@
 		<!-- warna bangunan rumah blok -->
 		<group>
 			<filter minzoom="10" maxzoom="15" color="#E7E9ED" tag="landuse" value="residential"/>
-			<filter minzoom="16" color="#D8F7BA" tag="landuse" value="residential"/>
+			<filter minzoom="16" color="#E7E9ED" tag="landuse" value="residential"/>
 			<filter minzoom="16" color="#E7E9ED" tag="building" value=""/>
 			<filter nightMode="true" minzoom="6" tag="natural" value="land" color="#D8F7BA"/>
 			<filter tag="natural" minzoom="6" value="land" color="#D8F7BA"/>
 		</group>
+		<switch hideBuildings="false">
+			<case minzoom="16" color="$buildingColorDay" tag="building" value="" strokeWidth_2="0.4" color_2="#000000">
+				<apply_if nightMode="true" color="$buildingColorNight" color_2="#aaaaaa"/>
+			</case>
+		</switch>
 
 
 	</polygon>
@@ -571,6 +579,10 @@
 			<apply_if minzoom="19" strokeWidth="3" pathEffect="17_4"/>
 			<apply_if nightMode="true" color="#84185A"/>
 		</case>
+
+		<case tag="admin_level" value="" order="62"/>
+		<case tag="administrative" value="" order="62"/>
+		<case tag="boundary" value="" order="62"/>
 
 	</line>
 </renderingStyle>
