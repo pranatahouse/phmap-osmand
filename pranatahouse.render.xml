@@ -2513,12 +2513,12 @@
 	<renderingConstant name="white" value="#ffffff"/>
 	<renderingAttribute name="motorwayTextColor">
 		<case roadStyle="highContrastRoads" attrColorValue="#DDDDDD"/>
-		<case nightMode="true" attrColorValue="#4a2521"/>
+		<case nightMode="true" attrColorValue="#f1f1f1"/>
 		<case attrColorValue="$black"/>
 	</renderingAttribute>
 	<renderingAttribute name="trunkTextColor">
 		<case roadStyle="highContrastRoads" attrColorValue="#DDDDDD"/>
-		<case nightMode="true" attrColorValue="#4a2521">
+		<case nightMode="true" attrColorValue="#f1f1f1">
 			<apply_if additional="tunnel=yes" attrColorValue="#bbbbbb"/>
 			<apply_if additional="covered=yes" attrColorValue="#bbbbbb"/>
 		</case>
@@ -2526,14 +2526,14 @@
 	</renderingAttribute>
 	<renderingAttribute name="primaryTextColor">
 		<case roadStyle="highContrastRoads" attrColorValue="#DDDDDD"/>
-		<case nightMode="true" attrColorValue="#4d362a"/>
+		<case nightMode="true" attrColorValue="#f1f1f1"/>
 		<case attrColorValue="$black"/>
 	</renderingAttribute>
 	<renderingAttribute name="secondaryTextColor">
 		<case roadStyle="highContrastRoads" attrColorValue="$black">
 			<apply_if nightMode="true" attrColorValue="#DDDDDD"/>
 		</case>
-		<case nightMode="true" attrColorValue="#4d4327"/>
+		<case nightMode="true" attrColorValue="#f1f1f1"/>
 		<case attrColorValue="$black"/>
 	</renderingAttribute>
 	<renderingAttribute name="tertiaryTextColor">
@@ -2541,7 +2541,7 @@
 		<case roadStyle="highContrastRoads" attrColorValue="$black">
 			<apply_if nightMode="true" attrColorValue="#000000"/>
 		</case>
-		<case nightMode="true" attrColorValue="#a3c5cc"/>
+		<case nightMode="true" attrColorValue="#f1f1f1"/>
 		<case attrColorValue="$black"/>
 	</renderingAttribute>
 	<renderingAttribute name="residentialTextColor">
