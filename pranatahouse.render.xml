@@ -6239,10 +6239,13 @@
 			<!-- Other Amenities -->
 			<switch hidePOILabels="false" textSize="12" nameTag="" textColor="$otherAmenitiesTextColorDay" textHaloColor="$otherAmenitiesTextHaloColorDay" textHaloRadius="$textHaloRadius" textWrapWidth="20" textOrder="171">
 				<case minzoom="17" tag="amenity" value="prison"/>
+
+				<!-- reorder place_of_worship -->
 				<switch tag="amenity" value="place_of_worship">
-					<case minzoom="15" moreDetailed="true" textOrder="43"/>
-					<case minzoom="16" textOrder="132"/>
+					<case minzoom="18" moreDetailed="true" textOrder="43"/>
+					<case minzoom="19" textOrder="132"/>
 				</switch>
+
 				<case minzoom="17" tag="amenity" value="bank"/>
 				<switch engine_v1="true">
 					<case minzoom="17" tag="amenity" value="atm" nameTag=""/>
@@ -8106,10 +8109,12 @@
 				</switch>
 				<case minzoom="16" tag="amenity" value="hunting_stand" icon="amenity_hunting_stand" shield="hunting_stand_shield"/>
 				<case minzoom="17" tag="amenity" value="feeding_place" icon="feeding_place" shield="feeding_place_shield"/>
+
+				<!-- reorder place_of_worship -->
 				<switch tag="amenity" value="place_of_worship" icon="amenity_place_of_worship" iconVisibleSize="11" intersectionSizeFactor="0.8">
-					<case minzoom="14" moreDetailed="true" iconOrder="43" iconVisibleSize="9" intersectionSizeFactor="0.7"/>
-					<case minzoom="15" moreDetailed="false" additional="wiki=yes" iconOrder="43" iconVisibleSize="9" intersectionSizeFactor="0.7"/>
-					<case minzoom="16" iconOrder="132"/>
+					<case minzoom="17" moreDetailed="true" iconOrder="43" iconVisibleSize="9" intersectionSizeFactor="0.7"/>
+					<case minzoom="18" moreDetailed="false" additional="wiki=yes" iconOrder="43" iconVisibleSize="9" intersectionSizeFactor="0.7"/>
+					<case minzoom="19" iconOrder="132"/>
 					<apply>
 						<case additional="religion=christian" icon="religion_christian"/>
 						<case additional="religion=jewish" icon="religion_jewish"/>
@@ -8122,6 +8127,7 @@
 					</apply>
 					<apply_if nightMode="true" shield="lightgray_round_night_shield" iconVisibleSize="30"/>
 				</switch>
+
 				<case minzoom="15" tag="amenity" value="monastery" icon="amenity_monastery" iconVisibleSize="22" iconOrder="70">
 					<apply_if nightMode="true" shield="lightgray_round_night_shield"/>
 					<apply_if moreDetailed="false" maxzoom="15" icon=""/>
