@@ -2672,7 +2672,7 @@
 	<renderingConstant name="placeTextHaloRadiusDay" value="1:1"/>
 
 	<renderingConstant name="placeTownMinZoom" value="8"/>
-	<renderingConstant name="placeVillageMinZoom" value="11"/>
+	<renderingConstant name="placeVillageMinZoom" value="18"/>
 	<renderingConstant name="placeHamletMinZoom" value="12"/>
 	<renderingConstant name="placeLocalityMinZoom" value="13"/>
 	<renderingConstant name="placeIsolatedDwellingMinZoom" value="13"/>
