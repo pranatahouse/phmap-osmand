@@ -1,6 +1,6 @@
 # phmap-osmand
 
-Custom rendering style for OsmAnd. We have two styles variant available at the moment.
+OsmAnd custom rendering style. We have two styles variant available at the moment.
 
 ![pranatahouse](screenshots.jpg)
 
