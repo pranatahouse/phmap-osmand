@@ -2683,7 +2683,7 @@
 	<renderingConstant name="placeVillageIconMaxZoom" value="19"/>
 	<renderingConstant name="placeHamletIconMinZoom" value="11"/>
 	<renderingConstant name="placeHamletIconMaxZoom" value="12"/>
-	<renderingConstant name="naturalPeakIconMinZoom" value="11"/>
+	<renderingConstant name="naturalPeakIconMinZoom" value="18"/>
 	<renderingConstant name="naturalVolcanoIconMinZoom" value="10"/>
 	<renderingConstant name="naturalHillIconMinZoom" value="14"/>
 	<renderingConstant name="campSiteIconMinZoom" value="14"/>
