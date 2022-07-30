@@ -553,7 +553,7 @@
 			<apply_if baseAppMode="car" nightMode="true" attrColorValue="#cc2626"/>
 		</case>
 		<case roadStyle="americanRoadAtlas" attrColorValue="#3977ba"/>
-		<case attrColorValue="#905d2e8c">
+		<case attrColorValue="#105d2e8c">
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#555555"/>
 			</case>
@@ -563,7 +563,7 @@
 		<apply_if additional="construction=yes" attrColorValue="$null"/>
 	</renderingAttribute>
 	<renderingConstant name="motorwayShadowRadius" value="0.4"/>
-	<renderingConstant name="motorwayShadowRadius_v2" value="1:1"/>
+	<renderingConstant name="motorwayShadowRadius_v2" value="0:1"/>
 	<renderingAttribute name="highwayShadowRadius"> <!-- OpenGL engine only for now (bug in engine_v1 - does not works)-->
 		<case showAccess="true" additional="motorroad=yes" attrFloatValue="1:1"/>
 		<case additional="winter_road=yes" attrFloatValue="1:1"/>
@@ -627,13 +627,13 @@
 		<case roadStyle="americanRoadAtlas" attrColorValue="#6f4726">
 			<apply_if nightMode="true" attrColorValue="#a72202"/>
 		</case>
-		<case attrColorValue="#969696">
+		<case attrColorValue="#05969696">
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#555555"/>
 			</case>
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
-		<case attrColorValue="#90803d26">
+		<case attrColorValue="#05803d26">
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#555555"/>
 			</case>
@@ -698,7 +698,7 @@
 			<!-- NOTE: Touring view's <renderingConstant name="shadowColorLowZoom" value="#262626"/> still ignored here for now -->
 		</case>
 		<case roadStyle="americanRoadAtlas" attrColorValue="#693431"/>
-		<case attrColorValue="#90805224">
+		<case attrColorValue="#05805224">
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#555555"/>
 			</case>
@@ -753,7 +753,7 @@
 			<apply_if nightMode="true" attrColorValue="#464646"/>
 			<!-- NOTE: Touring view's <renderingConstant name="shadowColorLowZoom" value="#262626"/> still ignored here for now -->
 		</case>
-		<case attrColorValue="#9080792f">
+		<case attrColorValue="#0580792f">
 			<apply_if nightMode="true" attrColorValue="$null"/>
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#444444"/>
@@ -810,7 +810,7 @@
 			<apply_if nightMode="true" attrColorValue="#464646"/>
 			<!-- NOTE: Touring view's <renderingConstant name="shadowColorLowZoom" value="#262626"/> ignored here for now -->
 		</case>
-		<case attrColorValue="#30000000">
+		<case attrColorValue="#05000000">
 			<apply_if nightMode="true" attrColorValue="#20000000"/>
 			<case streetLighting="true" minzoom="14">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#444444"/>
@@ -889,7 +889,7 @@
 		<case roadStyle="boldOutline" attrColorValue="#000000">
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
-		<case attrColorValue="#30000000">
+		<case attrColorValue="#05000000">
 			<apply_if nightMode="true" attrColorValue="#20000000"/>
 		</case>
 	</renderingAttribute>
@@ -958,7 +958,7 @@
 		<case roadStyle="boldOutline" attrColorValue="#222222">
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
-		<case attrColorValue="#30000000">
+		<case attrColorValue="#05000000">
 			<case streetLighting="true" minzoom="14">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#444444"/>
 				<apply_if nightMode="true" attrColorValue="#ffffff"/>
@@ -990,7 +990,7 @@
 		<case roadStyle="boldOutline" attrColorValue="#000000">
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
-		<case attrColorValue="#30000000">
+		<case attrColorValue="#05000000">
 			<apply_if nightMode="true" attrColorValue="#20000000"/>
 		</case>
 	</renderingAttribute>
@@ -1009,7 +1009,7 @@
 	</renderingAttribute>
 
 	<renderingAttribute name="buswayRoadShadowColor">
-		<case attrColorValue="#30000000">
+		<case attrColorValue="#05000000">
 			<apply_if nightMode="true" attrColorValue="#20000000"/>
 		</case>
 	</renderingAttribute>
@@ -1054,7 +1054,7 @@
 		<case roadStyle="boldOutline" attrColorValue="#000000">
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
-		<case attrColorValue="#30000000">
+		<case attrColorValue="#05000000">
 			<apply_if nightMode="true" attrColorValue="#20000000"/>
 		</case>
 	</renderingAttribute>
