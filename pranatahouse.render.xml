@@ -810,8 +810,8 @@
 			<apply_if nightMode="true" attrColorValue="#464646"/>
 			<!-- NOTE: Touring view's <renderingConstant name="shadowColorLowZoom" value="#262626"/> ignored here for now -->
 		</case>
-		<case attrColorValue="#05000000">
-			<apply_if nightMode="true" attrColorValue="#20000000"/>
+		<case attrColorValue="#00ffffff">
+			<apply_if nightMode="true" attrColorValue="#00000000"/>
 			<case streetLighting="true" minzoom="14">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#444444"/>
 				<apply_if nightMode="true" attrColorValue="#30000000"/>
@@ -889,8 +889,8 @@
 		<case roadStyle="boldOutline" attrColorValue="#000000">
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
-		<case attrColorValue="#05000000">
-			<apply_if nightMode="true" attrColorValue="#20000000"/>
+		<case attrColorValue="#00ffffff">
+			<apply_if nightMode="true" attrColorValue="#00000000"/>
 		</case>
 	</renderingAttribute>
 
