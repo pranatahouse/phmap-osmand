@@ -2699,7 +2699,7 @@
 	<renderingConstant name="towerIconMinZoom" value="16"/>
 	<renderingConstant name="mastIconMinZoom" value="16"/>
 	<renderingConstant name="barrierControlDotMinZoom" value="14"/>
-	<renderingConstant name="powerTowerIconMinZoom" value="14"/>
+	<renderingConstant name="powerTowerIconMinZoom" value="18"/>
 	<renderingConstant name="historicCastleIconMinZoom" value="15"/>
 	<renderingConstant name="petroleumWellIconMinZoom" value="16"/>
 
@@ -2726,7 +2726,7 @@
 	<renderingConstant name="footwayMinZoom" value="12"/>
 	<renderingConstant name="cyclewayMinZoom" value="13"/>
 	<renderingConstant name="bridlewayMinZoom" value="13"/>
-	<renderingConstant name="powerTowerLineMinZoom" value="14"/>
+	<renderingConstant name="powerTowerLineMinZoom" value="18"/>
 
 	<renderingConstant name="streamMinZoom" value="13"/>
 	<renderingConstant name="ditchMinZoom" value="13"/>
