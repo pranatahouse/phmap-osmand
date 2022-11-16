@@ -342,7 +342,7 @@
 			<select value="0" t="highway" v="secondary_link"/>
 			<select value="0" t="highway" v="tertiary"/>
 			<select value="0" t="highway" v="tertiary_link"/>
-			<select value="10" t="highway" v="residential"/>
+			<select value="0" t="highway" v="residential"/>
 			<select value="230" t="highway" v="service"/>
 			<select value="200"/>
 			
