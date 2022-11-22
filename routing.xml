@@ -515,7 +515,7 @@
 			<!-- lowest form of grid network, usually 90% of urban roads -->
 			<select value="1.0" t="highway" v="unclassified"/>
 			<!-- road = no type, no review and may be not accurate -->
-			<select value="0.7" t="highway" v="road"/>
+			<select value="1.0" t="highway" v="road"/>
 			<select value="1.0" t="highway" v="residential"/>
 
 			<select value="0.5" t="highway" v="track"/>
