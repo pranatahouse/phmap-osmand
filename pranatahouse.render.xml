@@ -225,7 +225,7 @@
 	<renderingAttribute name="shadowRendering">
 	<!-- 0 - no shadow, 1 - one step, 2 - blur shadow, 3 - solid shadow -->
 		<!-- next line ensures bridges stand out ok -->
-		<case minzoom="14" nightMode="false" attrIntValue="3" shadowColor="#969696"/>
+		<case minzoom="14" nightMode="false" attrIntValue="3" shadowColor="#00ff00"/>
 		<case minzoom="14" attrIntValue="3" shadowColor="#464646"/>
 		<case roadStyle="germanRoadAtlas" minzoom="6" maxzoom="13" attrIntValue="3"/>
 		<case roadStyle="americanRoadAtlas" minzoom="6" maxzoom="13" attrIntValue="3"/>
@@ -10498,7 +10498,7 @@
 						<case maxzoom="18" strokeWidth="10:10"/>
 						<case minzoom="19" strokeWidth="11.5:11.5"/>
 						<!-- Bridges -->
-						<apply_if additional="bridge=yes" color_0="#000000" cap="SQUARE" cap_0="BUTT">
+						<apply_if additional="bridge=yes" color_0="$null" cap="SQUARE" cap_0="BUTT">
 							<switch>
 								<case roadStyle="americanRoadAtlas"/>
 								<case roadStyle="germanRoadAtlas"/>
@@ -10601,7 +10601,7 @@
 							</switch>
 						</apply>
 						<!-- Bridges -->
-						<apply_if additional="bridge=yes" color_0="#000000" cap="SQUARE" cap_0="BUTT">
+						<apply_if additional="bridge=yes" color_0="$null" cap="SQUARE" cap_0="BUTT">
 							<switch>
 								<case roadStyle="americanRoadAtlas"/>
 								<case roadStyle="germanRoadAtlas"/>
@@ -10702,7 +10702,7 @@
 									</switch>
 								</apply>
 								<!-- Bridges -->
-								<apply_if additional="bridge=yes" minzoom="14" color_0="#000000" shadowRadius="0" cap="SQUARE" cap_0="BUTT">
+								<apply_if additional="bridge=yes" minzoom="14" color_0="$null" shadowRadius="0" cap="SQUARE" cap_0="BUTT">
 									<case maxzoom="14" strokeWidth_0="3.7:5.4"/>
 									<case maxzoom="15" strokeWidth_0="4.2:8.2"/>
 									<case maxzoom="16" strokeWidth_0="5.4:9.3"/>
@@ -10771,7 +10771,7 @@
 								</switch>
 							</apply>
 							<!-- Bridges -->
-							<apply_if additional="bridge=yes" color_0="#000000" minzoom="14" shadowRadius="0" cap="SQUARE" cap_0="BUTT">
+							<apply_if additional="bridge=yes" color_0="$null" minzoom="14" shadowRadius="0" cap="SQUARE" cap_0="BUTT">
 								<case maxzoom="14" strokeWidth_0="1.8:3"/>
 								<case maxzoom="15" strokeWidth_0="3:4"/>
 								<case maxzoom="16" strokeWidth_0="5:7"/>
@@ -10870,7 +10870,7 @@
 								<apply_if nightMode="true" color_0="$roadTunnelOutlineNightColor"/>
 							</switch>
 						</apply>
-						<apply_if additional="bridge=yes" shadowRadius="0" color_0="#000000" cap="SQUARE" cap_0="BUTT">
+						<apply_if additional="bridge=yes" shadowRadius="0" color_0="$null" cap="SQUARE" cap_0="BUTT">
 							<case maxzoom="13"/>
 							<case moreDetailed="true" minzoom="14" maxzoom="14" strokeWidth_0="1.5:2"/>
 							<case maxzoom="15" strokeWidth_0="2.5:4"/>
@@ -10921,7 +10921,7 @@
 						<apply_if additional="tunnel=yes" pathEffect="4_4" cap="BUTT"/>
 						<apply_if additional="covered=yes" pathEffect="7_2" pathEffect__2="1_1" cap="BUTT"/>
 						<!-- Bridges -->
-						<apply_if additional="bridge=yes" minzoom="14" shadowRadius="0" color_0="#44333333" cap="BUTT" cap_0="BUTT">
+						<apply_if additional="bridge=yes" minzoom="14" shadowRadius="0" color_0="#0000ff" cap="BUTT" cap_0="BUTT">
 							<case maxzoom="15" strokeWidth_0="2.8:2.8"/>
 							<case maxzoom="16" strokeWidth_0="4:4"/>
 							<case maxzoom="17" strokeWidth_0="6:6"/>
@@ -11118,7 +11118,7 @@
 						</switch>
 					</apply_if>
 					<!-- Bridges -->
-					<apply_if additional="bridge=yes" minzoom="14" color__1="#000000" color_0="#ffffff" pathEffect__1="">
+					<apply_if additional="bridge=yes" minzoom="14" color__1="#00ffff" color_0="#ffffff" pathEffect__1="">
 						<case maxzoom="15" strokeWidth__1="3:2" strokeWidth_0="2.3:1.5"/>
 						<case minzoom="16" strokeWidth__1="$trackBridgeWidth" strokeWidth_0="$trackBridgeInnerWidth"/>
 						<apply_if nightMode="true" color__1="#ffffff" color_0="#000000"/>
@@ -11609,7 +11609,7 @@
 		<case minzoom="14" tag="highway" value="via_ferrata" color="$null" strokeWidth="0.1" color_2="$viaFerrataColor" color_3="$viaFerrataColor" pathEffect_2="1_1" pathEffect_3="1_5">
 			<apply>
 				<switch>
-					<case additional="bridge=yes" color="$white" color__1="$black"/>
+					<case additional="bridge=yes" color="$white" color__1="#00ff00"/>
 					<case additional="tunnel=yes" color="$white" color__1="#444444" pathEffect="6_4" pathEffect__1="6_4"/>
 					<apply_if nightMode="true" color="$defaultColor" color__1="#999999"/>
 				</switch>
@@ -11759,7 +11759,7 @@
 						<case maxzoom="17" strokeWidth_2="4:4"/>
 						<case minzoom="18" strokeWidth_2="5:5"/>
 					</case>
-					<case minzoom="14" additional="bridge=yes" color__1="#000000">
+					<case minzoom="14" additional="bridge=yes" color__1="#0000ff">
 						<case maxzoom="14" strokeWidth__1="2.8:2.8"/>
 						<case maxzoom="16" strokeWidth__1="3.9:3.9"/>
 						<case maxzoom="17" strokeWidth__1="6:6"/>
@@ -11870,7 +11870,7 @@
 				<apply color="#999999" strokeWidth="1:1"/>
 				<apply_if subwayMode="false">
 					<apply_if additional="tunnel=yes" pathEffect="5_3"/>
-					<apply_if additional="bridge=yes" color__1="#000000" strokeWidth__1="3.5:3.5" color_0="#ffffff" strokeWidth_0="2.5:3"/>
+					<apply_if additional="bridge=yes" color__1="#0000ff" strokeWidth__1="3.5:3.5" color_0="#ffffff" strokeWidth_0="2.5:3"/>
 				</apply_if>
 			</case>
 			<case subwayMode="true" minzoom="11" tag="railway" value="rail" additional="route=subway">
@@ -11976,7 +11976,7 @@
 				<apply_if minzoom="9" maxzoom="13" strokeWidth="1:1" pathEffect="5_2"/>
 				<apply_if minzoom="14" strokeWidth="1:2" color_2="$railwayRailColor2" strokeWidth_2="1:2" pathEffect_2="4_4"/>
 			</case>
-			<case additional="bridge=yes" minzoom="14" color="#000000" strokeWidth="5" color_2="$railwayRailColor2" strokeWidth_2="4" color_3="#999999" strokeWidth_3="0.8" pathEffect_3="12_8_1_0"/>
+			<case additional="bridge=yes" minzoom="14" color="#00ff00" strokeWidth="5" color_2="$railwayRailColor2" strokeWidth_2="4" color_3="#999999" strokeWidth_3="0.8" pathEffect_3="12_8_1_0"/>
 			<case maxzoom="7" strokeWidth="0.6"/>
 			<case maxzoom="8" strokeWidth="0.9"/>
 			<case maxzoom="12" strokeWidth="1:1"/>
@@ -12015,14 +12015,14 @@
 			<case minzoom="13" color="#666666" strokeWidth="1:1" tag="railway" value="narrow_gauge">
 				<apply_if additional="tunnel=yes" strokeWidth="3.5:3.5" pathEffect="5_3" color_2="#cccccc" strokeWidth_2="2.5:3"/>
 			</case>
-			<apply_if additional="bridge=yes" minzoom="14" color__1="#000000" strokeWidth__1="3.5:3.5" color_0="#ffffff" strokeWidth_0="2.5:3"/>
+			<apply_if additional="bridge=yes" minzoom="14" color__1="#0000ff" strokeWidth__1="3.5:3.5" color_0="#ffffff" strokeWidth_0="2.5:3"/>
 		</switch>
 		<case minzoom="16" tag="railway" value="miniature" strokeWidth="1.5:1.5" pathEffect="2_3">
 			<apply color="#4c53eb">
 				<apply_if nightMode="true" color="#999ce4"/>
 			</apply>
 			<apply_if additional="tunnel=yes" color__1="#000000" strokeWidth__1="3.5:3.5" pathEffect__1="8_5" color_0="#ffffff" strokeWidth_0="2.5:3"/>
-			<apply_if additional="bridge=yes" minzoom="14" color__1="#000000" strokeWidth__1="3.5:3.5" color_0="#ffffff" strokeWidth_0="2.5:3"/>
+			<apply_if additional="bridge=yes" minzoom="14" color__1="#00ff00" strokeWidth__1="3.5:3.5" color_0="#ffffff" strokeWidth_0="2.5:3"/>
 			<apply_if nightMode="true" color_0="#000000" color__1="#ffffff"/>
 		</case>
 
@@ -12118,7 +12118,7 @@
 					<apply_if nightMode="true" color="#22666666" color_2="#555555"/>
 				</switch>
 			</apply>
-			<apply_if additional="bridge=yes" color__1="#777777" color="#ffffff" color_2="#666666">
+			<apply_if additional="bridge=yes" color__1="#00ff00" color="#ffffff" color_2="#666666">
 				<apply_if maxzoom="17" strokeWidth__1="3.5:3.5"/>
 				<apply_if minzoom="18" strokeWidth__1="4:4"/>
 				<apply_if nightMode="true" color="#99222222" color_2="#777777"/>
