@@ -553,7 +553,7 @@
 			<apply_if baseAppMode="car" nightMode="true" attrColorValue="#cc2626"/>
 		</case>
 		<case roadStyle="americanRoadAtlas" attrColorValue="#3977ba"/>
-		<case attrColorValue="#105d2e8c">
+		<case attrColorValue="#FBEC74">
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#555555"/>
 			</case>
