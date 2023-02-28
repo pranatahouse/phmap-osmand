@@ -627,7 +627,7 @@
 		<case roadStyle="americanRoadAtlas" attrColorValue="#6f4726">
 			<apply_if nightMode="true" attrColorValue="#a72202"/>
 		</case>
-		<case attrColorValue="#00FDF6BE">
+		<case attrColorValue="#FBEC74">
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#555555"/>
 			</case>
@@ -698,7 +698,7 @@
 			<!-- NOTE: Touring view's <renderingConstant name="shadowColorLowZoom" value="#262626"/> still ignored here for now -->
 		</case>
 		<case roadStyle="americanRoadAtlas" attrColorValue="#693431"/>
-		<case attrColorValue="#00FDF6BE">
+		<case attrColorValue="#FBEC74">
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#555555"/>
 			</case>
@@ -753,7 +753,7 @@
 			<apply_if nightMode="true" attrColorValue="#464646"/>
 			<!-- NOTE: Touring view's <renderingConstant name="shadowColorLowZoom" value="#262626"/> still ignored here for now -->
 		</case>
-		<case attrColorValue="#00FDF6BE">
+		<case attrColorValue="#FBEC74">
 			<apply_if nightMode="true" attrColorValue="$null"/>
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#444444"/>
@@ -810,7 +810,7 @@
 			<apply_if nightMode="true" attrColorValue="#464646"/>
 			<!-- NOTE: Touring view's <renderingConstant name="shadowColorLowZoom" value="#262626"/> ignored here for now -->
 		</case>
-		<case attrColorValue="#00ffffff">
+		<case attrColorValue="#D8D8D8">
 			<apply_if nightMode="true" attrColorValue="#000000"/>
 			<case streetLighting="true" minzoom="14">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#000000"/>
@@ -829,7 +829,7 @@
 		<case roadStyle="germanRoadAtlas" attrColorValue="#767676">
 			<apply_if nightMode="true" attrColorValue="#464646"/>
 		</case>
-		<case attrColorValue="#00ffffff">
+		<case attrColorValue="#D8D8D8">
 		    <apply_if nightMode="true" attrColorValue="$null"/>
 			<case streetLighting="true" minzoom="14">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#000000"/>
@@ -865,7 +865,7 @@
 		<case roadStyle="boldOutline" attrColorValue="#99666666">
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
-		<case attrColorValue="#00ffffff">
+		<case attrColorValue="#D8D8D8">
 			<apply_if nightMode="true" attrColorValue="#00000000"/>
 		</case>
 	</renderingAttribute>
@@ -877,7 +877,7 @@
 		<case roadStyle="boldOutline" attrColorValue="#444444">
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
-		<case attrColorValue="#00ffffff">
+		<case attrColorValue="#D8D8D8">
 			<apply_if nightMode="true" attrColorValue="#ff000000"/>
 		</case>
 	</renderingAttribute>
@@ -889,7 +889,7 @@
 		<case roadStyle="boldOutline" attrColorValue="#000000">
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
-		<case attrColorValue="#00ffffff">
+		<case attrColorValue="#D8D8D8">
 			<apply_if nightMode="true" attrColorValue="#00000000"/>
 		</case>
 	</renderingAttribute>
