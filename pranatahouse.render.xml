@@ -783,7 +783,7 @@
 				<apply_if additional="covered=yes" attrColorValue="#958125"/>
 			</apply_if>
 		</case>
-		<case attrColorValue="#ffffff">
+		<case attrColorValue="#FDF6BE">
 			<apply_if additional="tunnel=yes" attrColorValue="#F2F2F2"/>
 			<apply_if additional="covered=yes" attrColorValue="#F2F2F2"/>
 			<apply_if additional="construction=yes" attrColorValue="#D6CF2A"/>
@@ -810,7 +810,7 @@
 			<apply_if nightMode="true" attrColorValue="#464646"/>
 			<!-- NOTE: Touring view's <renderingConstant name="shadowColorLowZoom" value="#262626"/> ignored here for now -->
 		</case>
-		<case attrColorValue="#D8D8D8">
+		<case attrColorValue="#FBEC74">
 			<apply_if nightMode="true" attrColorValue="#000000"/>
 			<case streetLighting="true" minzoom="14">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#000000"/>
