@@ -6289,7 +6289,7 @@
 				<case minzoom="17" tag="amenity" value="driver_training"/>
 				<case minzoom="17" tag="amenity" value="childcare" textOrder="133"/>
 
-				<case minzoom="18" tag="amenity" value="bench" textOrder="172" textOnPath="true"/>
+				<case minzoom="19" tag="amenity" value="bench" textOrder="172" textOnPath="true"/>
 				<case minzoom="18" tag="amenity" value="lounger" textOrder="172"/>
 				<case minzoom="17" tag="amenity" value="fountain"/>
 				<case minzoom="18" tag="amenity" value="telephone"/>
@@ -7272,7 +7272,7 @@
 						</case>
 						<apply_if minzoom="16" additional="drinking_water=yes" icon_2="drinking_water_yes_map"/>
 					</switch>
-					<case minzoom="17" tag="amenity" value="bench" icon="bench" shield="bench_shield" iconOrder="70"/>
+					<case minzoom="19" tag="amenity" value="bench" icon="bench" shield="bench_shield" iconOrder="70"/>
 				</switch>
 				<switch iconOrder="85">
 					<switch>
@@ -8002,7 +8002,7 @@
 				<case minzoom="16" tag="geocache" value="" icon="geocache_not_found"/>
 
 				<!-- Other amenities -->
-				<case minzoom="17" tag="amenity" value="bench" icon="bench" shield="bench_shield" iconOrder="172"/>
+				<case minzoom="19" tag="amenity" value="bench" icon="bench" shield="bench_shield" iconOrder="172"/>
 				<case minzoom="17" tag="amenity" value="lounger" icon="lounger" shield="lounger_shield" iconOrder="172"/>
 
 				<case minzoom="17" tag="amenity" value="recycling" iconVisibleSize="24">
@@ -11581,7 +11581,7 @@
 		<case minzoom="16" tag="barrier" value="hedge" color="#aed1a0" strokeWidth="1.5:1.5">
 			<apply_if nightMode="true" color="#285926"/>
 		</case>
-		<case minzoom="17" tag="amenity" value="bench" color="#333333" strokeWidth="0.5:1">
+		<case minzoom="19" tag="amenity" value="bench" color="#333333" strokeWidth="0.5:1">
 			<apply_if nightMode="true" color="#999999"/>
 		</case>
 
