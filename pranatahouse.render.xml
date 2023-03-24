@@ -501,7 +501,7 @@
 				<apply_if additional="covered=yes" attrColorValue="#33336B"/>
 			</apply_if>
 		</case>
-		<case attrColorValue="#FDF6BE">
+		<case attrColorValue="#f6cf65">
 			<apply_if additional="tunnel=yes" attrColorValue="#EEAF9A"/>
 			<apply_if additional="covered=yes" attrColorValue="#EEAF9A"/>
 			<apply_if nightMode="true" attrColorValue="#37555c">
@@ -553,7 +553,7 @@
 			<apply_if baseAppMode="car" nightMode="true" attrColorValue="#cc2626"/>
 		</case>
 		<case roadStyle="americanRoadAtlas" attrColorValue="#3977ba"/>
-		<case attrColorValue="#FBEC74">
+		<case attrColorValue="#ffaf36">
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#555555"/>
 			</case>
@@ -599,7 +599,7 @@
 				<apply_if additional="covered=yes" attrColorValue="#5D2745"/>
 			</apply_if>
 		</case>
-		<case attrColorValue="#FDF6BE">
+		<case attrColorValue="#f6cf65">
 			<apply_if additional="tunnel=yes" attrColorValue="#F9BAA5"/>
 			<apply_if additional="covered=yes" attrColorValue="#F9BAA5"/>
 			<apply_if nightMode="true" attrColorValue="#37555c">
@@ -627,7 +627,7 @@
 		<case roadStyle="americanRoadAtlas" attrColorValue="#6f4726">
 			<apply_if nightMode="true" attrColorValue="#a72202"/>
 		</case>
-		<case attrColorValue="#FBEC74">
+		<case attrColorValue="#ffaf36">
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#555555"/>
 			</case>
@@ -671,7 +671,7 @@
 				<apply_if additional="covered=yes" attrColorValue="#7C1D2E"/>
 			</apply_if>
 		</case>
-		<case attrColorValue="#FDF6BE">
+		<case attrColorValue="#f6cf65">
 			<apply_if additional="tunnel=yes" attrColorValue="#FFCF9E"/>
 			<apply_if additional="covered=yes" attrColorValue="#FFCF9E"/>
 			<apply_if nightMode="true" attrColorValue="#37555c">
@@ -698,7 +698,7 @@
 			<!-- NOTE: Touring view's <renderingConstant name="shadowColorLowZoom" value="#262626"/> still ignored here for now -->
 		</case>
 		<case roadStyle="americanRoadAtlas" attrColorValue="#693431"/>
-		<case attrColorValue="#FBEC74">
+		<case attrColorValue="#ffaf36">
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#555555"/>
 			</case>
@@ -727,7 +727,7 @@
 				<apply_if additional="covered=yes" attrColorValue="#A5621F"/>
 			</apply_if>
 		</case>
-		<case attrColorValue="#FDF6BE">
+		<case attrColorValue="#f6cf65">
 			<apply_if additional="tunnel=yes" attrColorValue="#FBF6B9"/>
 			<apply_if additional="covered=yes" attrColorValue="#FBF6B9"/>
 			<apply_if nightMode="true" attrColorValue="#37555c">
@@ -753,7 +753,7 @@
 			<apply_if nightMode="true" attrColorValue="#464646"/>
 			<!-- NOTE: Touring view's <renderingConstant name="shadowColorLowZoom" value="#262626"/> still ignored here for now -->
 		</case>
-		<case attrColorValue="#FBEC74">
+		<case attrColorValue="#ffaf36">
 			<apply_if nightMode="true" attrColorValue="$null"/>
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#444444"/>
@@ -810,7 +810,7 @@
 			<apply_if nightMode="true" attrColorValue="#464646"/>
 			<!-- NOTE: Touring view's <renderingConstant name="shadowColorLowZoom" value="#262626"/> ignored here for now -->
 		</case>
-		<case attrColorValue="#FBEC74">
+		<case attrColorValue="#f6cf65">
 			<apply_if nightMode="true" attrColorValue="#000000"/>
 			<case streetLighting="true" minzoom="14">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#000000"/>
