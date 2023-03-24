@@ -939,7 +939,7 @@
 				<apply_if additional="covered=yes" attrColorValue="#726D53"/>
 			</apply_if>
 		</case>
-		<case attrColorValue="#ffffff">
+		<case attrColorValue="#ececec">
 			<apply_if additional="tunnel=yes" attrColorValue="#F2F2F2"/>
 			<apply_if additional="covered=yes" attrColorValue="#F2F2F2"/>
 			<apply_if additional="construction=yes" attrColorValue="#cccccc"/>
@@ -958,7 +958,7 @@
 		<case roadStyle="boldOutline" attrColorValue="#222222">
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
-		<case attrColorValue="#05000000">
+		<case attrColorValue="#CBCBCB">
 			<case streetLighting="true" minzoom="14">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#444444"/>
 				<apply_if nightMode="true" attrColorValue="#ffffff"/>
@@ -977,7 +977,7 @@
 				<apply_if additional="covered=yes" attrColorValue="#807A5E"/>
 			</apply_if>
 		</case>
-		<case attrColorValue="#ffffff">
+		<case attrColorValue="#ececec">
 			<apply_if moreDetailed="true" attrColorValue="#E8E8E8"/>
 			<apply_if additional="tunnel=yes" attrColorValue="#F2F2F2"/>
 			<apply_if additional="covered=yes" attrColorValue="#F2F2F2"/>
@@ -990,7 +990,7 @@
 		<case roadStyle="boldOutline" attrColorValue="#000000">
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
-		<case attrColorValue="#05000000">
+		<case attrColorValue="#CBCBCB">
 			<apply_if nightMode="true" attrColorValue="#20000000"/>
 		</case>
 	</renderingAttribute>
