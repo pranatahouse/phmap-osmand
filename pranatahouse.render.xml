@@ -501,7 +501,7 @@
 				<apply_if additional="covered=yes" attrColorValue="#33336B"/>
 			</apply_if>
 		</case>
-		<case attrColorValue="#f6cf65">
+		<case attrColorValue="#ffc0cb">
 			<apply_if additional="tunnel=yes" attrColorValue="#EEAF9A"/>
 			<apply_if additional="covered=yes" attrColorValue="#EEAF9A"/>
 			<apply_if nightMode="true" attrColorValue="#37555c">
@@ -553,7 +553,7 @@
 			<apply_if baseAppMode="car" nightMode="true" attrColorValue="#cc2626"/>
 		</case>
 		<case roadStyle="americanRoadAtlas" attrColorValue="#3977ba"/>
-		<case attrColorValue="#ffaf36">
+		<case attrColorValue="#f00c93">
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#555555"/>
 			</case>
