@@ -5006,7 +5006,7 @@
 				</case>
 				<switch>
 					<case minzoom="16" tag="junction" value="yes" textOrder="47"/>
-					<case minzoom="17" tag="highway" value="traffic_signals" textOrder="83">
+					<case minzoom="15" tag="highway" value="traffic_signals" textOrder="83">
 						<apply_if engine_v1="true" textDy="7"/>
 					</case>
 					<apply textSize="13" textColor="#222222" textHaloRadius="$textHaloRadius" textHaloColor="#77ffffff" textWrapWidth="16" textMinDistance="10"/>
@@ -6988,7 +6988,7 @@
 					<case minzoom="18" tag="emergency" value="phone" icon="emergency_phone" shield="red_round_shield">
 						<apply_if nightMode="true" shield="red_round_night_shield"/>
 					</case>
-					<case moreDetailed="true" minzoom="16" tag="highway" value="traffic_signals" icon="highway_traffic_signals_map" shield="traffic_signals_shield" iconOrder="50"/>
+					<case moreDetailed="true" minzoom="15" tag="highway" value="traffic_signals" icon="highway_traffic_signals_map" shield="traffic_signals_shield" iconOrder="50"/>
 					<case minzoom="15" tag="highway" value="mini_roundabout" icon="highway_mini_roundabout" shield="miniroundabout_anticlockwise_shield">
 						<apply_if additional="lhn=yes" icon="mini_roundabout_lhn" shield="miniroundabout_clockwise_shield"/>
 						<apply_if nightMode="true" shield=""/>
@@ -6999,7 +6999,7 @@
 						<apply icon="ford" shield="ford_shield"/>
 					</switch>
 					<case minzoom="16" tag="highway" value="passing_place" icon="highway_passing_place"/>
-					<case moreDetailed="true" minzoom="16" tag="highway" value="crossing" icon="highway_crossing_map" shield="highway_crossing_shield" iconVisibleSize="18" intersectionSizeFactor="1.2" iconOrder="160">
+					<case moreDetailed="true" minzoom="15" tag="highway" value="crossing" icon="highway_crossing_map" shield="highway_crossing_shield" iconVisibleSize="18" intersectionSizeFactor="1.2" iconOrder="160">
 						<case additional="crossing=uncontrolled" icon="crossing_uncontrolled_map"/>
 						<case additional="crossing=traffic_signals" icon="crossing_traffic_signals_map" shield="highway_crossing_traffic_signals_shield" iconOrder="83"/>
 						<apply_if streetLighting="true">
@@ -7101,7 +7101,7 @@
 			<!-- Bicycle profile priority icons -->
 			<switch baseAppMode="bicycle" iconOrder="80">
 				<switch hideIcons="false">
-					<case minzoom="17" tag="highway" value="traffic_signals" icon="highway_traffic_signals_map" shield="traffic_signals_shield" iconOrder="50"/>
+					<case minzoom="15" tag="highway" value="traffic_signals" icon="highway_traffic_signals_map" shield="traffic_signals_shield" iconOrder="50"/>
 					<case minzoom="15" tag="highway" value="mini_roundabout" icon="highway_mini_roundabout" shield="miniroundabout_anticlockwise_shield">
 						<apply_if additional="lhn=yes" icon="mini_roundabout_lhn" shield="miniroundabout_clockwise_shield"/>
 						<apply_if nightMode="true" shield=""/>
@@ -7495,7 +7495,7 @@
 					<apply_if nightMode="true" shield="red_round_night_shield"/>
 				</switch>
 				<!-- Traffic + Transportation -->
-				<case minzoom="17" tag="highway" value="traffic_signals" icon="highway_traffic_signals_map" shield="traffic_signals_shield" iconOrder="50"/>
+				<case minzoom="15" tag="highway" value="traffic_signals" icon="highway_traffic_signals_map" shield="traffic_signals_shield" iconOrder="50"/>
 				<case minzoom="15" tag="highway" value="mini_roundabout" icon="highway_mini_roundabout" shield="miniroundabout_anticlockwise_shield">
 					<apply_if additional="lhn=yes" icon="mini_roundabout_lhn" shield="miniroundabout_clockwise_shield"/>
 					<apply_if nightMode="true" shield=""/>
@@ -7509,7 +7509,7 @@
 					<apply icon="ford" shield="ford_shield"/>
 				</switch>
 				<case minzoom="17" tag="highway" value="passing_place" icon="highway_passing_place"/>
-				<case minzoom="17" tag="highway" value="crossing" icon="highway_crossing_map" iconVisibleSize="14" shield="highway_crossing_shield" iconOrder="160">
+				<case minzoom="15" tag="highway" value="crossing" icon="highway_crossing_map" iconVisibleSize="14" shield="highway_crossing_shield" iconOrder="160">
 					<case additional="crossing=uncontrolled" icon="crossing_uncontrolled_map"/>
 					<case additional="crossing=traffic_signals" icon="crossing_traffic_signals_map" shield="highway_crossing_traffic_signals_shield" iconOrder="83"/>
 					<case additional="crossing=unmarked" icon="crossing_unmarked_map"/>
