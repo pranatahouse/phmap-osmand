@@ -10652,8 +10652,8 @@
 				</apply_if>
 				<!-- <apply_if engine_v1="true" onewayArrowsColor="$mainHighwayOnewayArrowsColor"/>-->
 				<apply_if minzoom="16"> <!-- for new OpenGL engine only -->
-					<apply_if additional="oneway=yes" pathIcon="oneway_black_semitransparent_big" pathIconStep="70"/>
-					<apply_if additional="oneway=-1" pathIcon="oneway_reverse_black_semitransparent_big" pathIconStep="70"/>
+					<apply_if additional="oneway=yes" pathIcon="oneway_black_semitransparent_big" pathIconStep="200"/>
+					<apply_if additional="oneway=-1" pathIcon="oneway_reverse_black_semitransparent_big" pathIconStep="200"/>
 				</apply_if>
 			</switch>
 			<switch>
