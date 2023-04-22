@@ -1068,37 +1068,37 @@
 	</renderingAttribute>
 	<renderingAttribute name="trunkHighwayOnewayArrowsColor">
 		<case roadStyle="highContrastRoads" attrColorValue="#ffffff"/>
-		<case attrColorValue="#FDF6BE">
+		<case attrColorValue="#a6553a">
 			<apply_if nightMode="true" attrColorValue="#37555c"/>
 		</case>
 	</renderingAttribute>
 	<renderingAttribute name="primaryHighwayOnewayArrowsColor">
 		<case roadStyle="highContrastRoads" attrColorValue="#ffffff"/>
-		<case attrColorValue="#FDF6BE">
+		<case attrColorValue="#a6553a">
 			<apply_if nightMode="true" attrColorValue="#37555c"/>
 		</case>
 	</renderingAttribute>
 	<renderingAttribute name="secondaryHighwayOnewayArrowsColor">
 		<case roadStyle="highContrastRoads" attrColorValue="#000000"/>
-		<case attrColorValue="#FDF6BE">
+		<case attrColorValue="#999245">
 			<apply_if nightMode="true" attrColorValue="#37555c"/>
 		</case>
 	</renderingAttribute>
 	<renderingAttribute name="tertiaryHighwayOnewayArrowsColor">
 		<case roadStyle="highContrastRoads" attrColorValue="#000000"/>
-		<case attrColorValue="#ffffff">
+		<case attrColorValue="#a6a5a4">
 			<apply_if nightMode="true" attrColorValue="#37555c"/>
 		</case>
 	</renderingAttribute>
 	<renderingAttribute name="residentialHighwayOnewayArrowsColor">
 		<case roadStyle="highContrastRoads" attrColorValue="#000000"/>
-		<case attrColorValue="#ffffff">
+		<case attrColorValue="#a6a5a4">
 			<apply_if nightMode="true" attrColorValue="#37555c"/>
 		</case>
 	</renderingAttribute>
 	<renderingAttribute name="serviceHighwayOnewayArrowsColor">
 		<case roadStyle="highContrastRoads" attrColorValue="#000000"/>
-		<case attrColorValue="#ffffff">
+		<case attrColorValue="#a6a5a4">
 			<apply_if nightMode="true" attrColorValue="#37555c"/>
 		</case>
 	</renderingAttribute>
@@ -10651,12 +10651,10 @@
 					<case minzoom="19" strokeWidth="6:6" strokeWidth_0="6:6" pathEffect="7_12" strokeWidth__1="6.8:7.7"/>
 				</apply_if>
 				<!-- <apply_if engine_v1="true" onewayArrowsColor="$mainHighwayOnewayArrowsColor"/>-->
-				<!-- for new OpenGL engine only 
-				<apply_if minzoom="16"> 
-					<apply_if additional="oneway=yes" pathIcon="oneway_blue_big" pathIconStep="70"/>
-					<apply_if additional="oneway=-1" pathIcon="oneway_reverse_blue_big" pathIconStep="70"/>
+				<apply_if minzoom="16"> <!-- for new OpenGL engine only -->
+					<apply_if additional="oneway=yes" pathIcon="oneway_black_semitransparent_big" pathIconStep="70"/>
+					<apply_if additional="oneway=-1" pathIcon="oneway_reverse_black_semitransparent_big" pathIconStep="70"/>
 				</apply_if>
-				-->
 			</switch>
 			<switch>
 				<switch>
