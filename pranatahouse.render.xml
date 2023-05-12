@@ -6471,8 +6471,8 @@
 					<switch>
 						<case hideHouseNumbers="false" tag="building" value="" nameTag="addr:housenumber" nameTag2="addr:housename"/>
 						<case hideHouseNumbers="false" tag="building" value="" nameTag="addr:housenumber" />
-						<apply_if maxzoom="17" textSize="13"/>
-						<apply_if minzoom="18" textSize="15"/>
+						<apply_if maxzoom="19" textSize="13"/>
+						<apply_if minzoom="20" textSize="15"/>
 					</switch>
 					<apply textMinDistance="40" intersectionMargin="20" textColor="$buildingTextColor" textHaloColor="$buildingTextHaloColor" textWrapWidth="20" textOrder="135"/>
 				</switch>
@@ -6483,23 +6483,23 @@
 					<apply textColor="$buildingTextColor" textHaloColor="$buildingTextHaloColor" textWrapWidth="20" textOrder="137"/>
 				</switch>
 				<switch>
-					<case hideHouseNumbers="false" minzoom="16" tag="addr:housenumber" value="" nameTag="" nameTag2="addr:housenumber"/>
-					<case minzoom="16" tag="addr:housenumber" value="" nameTag=""/>
-					<case hideHouseNumbers="true" minzoom="16" tag="addr:housenumber" value="" nameTag="addr:housename"/>
-					<case hideHouseNumbers="false" minzoom="16" tag="addr:housenumber" value="" nameTag="addr:housenumber" nameTag2="addr:housename"/>
-					<case hideHouseNumbers="false" minzoom="16" tag="addr:housenumber" value="" nameTag="addr:housenumber"/>
-					<case minzoom="16" tag="addr:housename" value=""/>
+					<case hideHouseNumbers="false" minzoom="19" tag="addr:housenumber" value="" nameTag="" nameTag2="addr:housenumber"/>
+					<case minzoom="19" tag="addr:housenumber" value="" nameTag=""/>
+					<case hideHouseNumbers="true" minzoom="19" tag="addr:housenumber" value="" nameTag="addr:housename"/>
+					<case hideHouseNumbers="false" minzoom="19" tag="addr:housenumber" value="" nameTag="addr:housenumber" nameTag2="addr:housename"/>
+					<case hideHouseNumbers="false" minzoom="19" tag="addr:housenumber" value="" nameTag="addr:housenumber"/>
+					<case minzoom="19" tag="addr:housename" value=""/>
 					<apply_if engine_v1="false">
-						<case maxzoom="16" textSize="13" intersectionMargin="20">
+						<case maxzoom="19" textSize="13" intersectionMargin="20">
 							<apply_if baseAppMode="car" intersectionMargin="30"/>
 						</case>
-						<case maxzoom="17" textSize="14" intersectionMargin="20"/>
-						<case minzoom="18" textSize="15" intersectionMargin="20"/>
+						<case maxzoom="19" textSize="14" intersectionMargin="20"/>
+						<case minzoom="20" textSize="15" intersectionMargin="20"/>
 					</apply_if>
 					<apply_if engine_v1="true" intersectionMargin="5">
-						<case maxzoom="16" textSize="13"/>
-						<case maxzoom="17" textSize="14"/>
-						<case minzoom="18" textSize="15"/>
+						<case maxzoom="19" textSize="13"/>
+						<case maxzoom="20" textSize="14"/>
+						<case minzoom="19" textSize="15"/>
 					</apply_if>
 					<apply_if engine_v1="true" textDy="8"/>
 					<apply textColor="$buildingTextColor" textHaloColor="$buildingTextHaloColor" textWrapWidth="25" textOrder="136"/>
@@ -6513,7 +6513,7 @@
 						</switch>
 						<apply_if engine_v1="true" textDy="7"/>
 					</case>
-					<switch minzoom="18">
+					<switch minzoom="19">
 						<case maxzoom="18" tag="entrance" value="" nameTag="ref"/>
 						<case hideHouseNumbers="false" tag="entrance" value="" nameTag="addr:housenumber"/>
 						<case minzoom="19" tag="entrance" value="" nameTag="ref" nameTag2="addr:flats"/>
