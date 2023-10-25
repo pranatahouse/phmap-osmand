@@ -312,7 +312,7 @@
 		<!-- color_2 used for route direction arrows -->
 		<!-- color_3 used for turn arrows on the route -->
 		<case color="#007aff" strokeWidth="5:8" color_3="#ffde5b" color_2="#0040dd" strokeWidth_3="5:7">
-			<apply_if nightMode="true" color="#ffdf3d" color_2="#806f1f" color_3="#41a6d9" strokeWidth="5:8" color_0="#CCb29c2b" strokeWidth_0="12:8"/>
+			<apply_if nightMode="true" color="#007aff" color_2="#806f1f" color_3="#ffde5b" strokeWidth="5:8" color_0="#CCb29c2b" strokeWidth_0="12:8"/>
 		</case>
 	</renderingAttribute>
 
