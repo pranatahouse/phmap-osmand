@@ -890,7 +890,7 @@
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
 		<case attrColorValue="#D8D8D8">
-			<apply_if nightMode="true" attrColorValue="#00000000"/>
+			<apply_if nightMode="true" attrColorValue="#000000"/>
 		</case>
 	</renderingAttribute>
 
