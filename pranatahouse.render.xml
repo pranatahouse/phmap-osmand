@@ -602,7 +602,7 @@
 		<case attrColorValue="#f6cf65">
 			<apply_if additional="tunnel=yes" attrColorValue="#F9BAA5"/>
 			<apply_if additional="covered=yes" attrColorValue="#F9BAA5"/>
-			<apply_if nightMode="true" attrColorValue="#2a4162">
+			<apply_if nightMode="true" attrColorValue="#4D6A94">
 				<apply_if additional="tunnel=yes" attrColorValue="#66332E"/>
 				<apply_if additional="covered=yes" attrColorValue="#66332E"/>
 			</apply_if>
@@ -633,7 +633,7 @@
 			</case>
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
-		<case attrColorValue="#2a4162">
+		<case attrColorValue="#4D6A94">
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#555555"/>
 			</case>
@@ -674,7 +674,7 @@
 		<case attrColorValue="#f6cf65">
 			<apply_if additional="tunnel=yes" attrColorValue="#FFCF9E"/>
 			<apply_if additional="covered=yes" attrColorValue="#FFCF9E"/>
-			<apply_if nightMode="true" attrColorValue="#2a4162">
+			<apply_if nightMode="true" attrColorValue="#4D6A94">
 				<apply_if additional="tunnel=yes" attrColorValue="#835C49"/>
 				<apply_if additional="covered=yes" attrColorValue="#835C49"/>
 			</apply_if>
@@ -730,7 +730,7 @@
 		<case attrColorValue="#f6cf65">
 			<apply_if additional="tunnel=yes" attrColorValue="#FBF6B9"/>
 			<apply_if additional="covered=yes" attrColorValue="#FBF6B9"/>
-			<apply_if nightMode="true" attrColorValue="#2a4162">
+			<apply_if nightMode="true" attrColorValue="#4D6A94">
 				<apply_if additional="tunnel=yes" attrColorValue="#7A6D45"/>
 				<apply_if additional="covered=yes" attrColorValue="#7A6D45"/>
 			</apply_if>
@@ -787,7 +787,7 @@
 			<apply_if additional="tunnel=yes" attrColorValue="#F2F2F2"/>
 			<apply_if additional="covered=yes" attrColorValue="#F2F2F2"/>
 			<apply_if additional="construction=yes" attrColorValue="#D6CF2A"/>
-			<apply_if nightMode="true" attrColorValue="#1b293e">
+			<apply_if nightMode="true" attrColorValue="#42566E">
 				<apply_if additional="tunnel=yes" attrColorValue="#2E474D"/>
 				<apply_if additional="covered=yes" attrColorValue="#2E474D"/>
 			</apply_if>
@@ -1063,43 +1063,43 @@
 	<renderingAttribute name="motorwayHighwayOnewayArrowsColor">
 		<case roadStyle="highContrastRoads" attrColorValue="#ffffff"/>
 		<case attrColorValue="#FDF6BE">
-			<apply_if nightMode="true" attrColorValue="#1b293e"/>
+			<apply_if nightMode="true" attrColorValue="#42566E"/>
 		</case>
 	</renderingAttribute>
 	<renderingAttribute name="trunkHighwayOnewayArrowsColor">
 		<case roadStyle="highContrastRoads" attrColorValue="#ffffff"/>
 		<case attrColorValue="#a6553a">
-			<apply_if nightMode="true" attrColorValue="#1b293e"/>
+			<apply_if nightMode="true" attrColorValue="#42566E"/>
 		</case>
 	</renderingAttribute>
 	<renderingAttribute name="primaryHighwayOnewayArrowsColor">
 		<case roadStyle="highContrastRoads" attrColorValue="#ffffff"/>
 		<case attrColorValue="#a6553a">
-			<apply_if nightMode="true" attrColorValue="#1b293e"/>
+			<apply_if nightMode="true" attrColorValue="#42566E"/>
 		</case>
 	</renderingAttribute>
 	<renderingAttribute name="secondaryHighwayOnewayArrowsColor">
 		<case roadStyle="highContrastRoads" attrColorValue="#000000"/>
 		<case attrColorValue="#999245">
-			<apply_if nightMode="true" attrColorValue="#1b293e"/>
+			<apply_if nightMode="true" attrColorValue="#42566E"/>
 		</case>
 	</renderingAttribute>
 	<renderingAttribute name="tertiaryHighwayOnewayArrowsColor">
 		<case roadStyle="highContrastRoads" attrColorValue="#000000"/>
 		<case attrColorValue="#a6a5a4">
-			<apply_if nightMode="true" attrColorValue="#1b293e"/>
+			<apply_if nightMode="true" attrColorValue="#42566E"/>
 		</case>
 	</renderingAttribute>
 	<renderingAttribute name="residentialHighwayOnewayArrowsColor">
 		<case roadStyle="highContrastRoads" attrColorValue="#000000"/>
 		<case attrColorValue="#a6a5a4">
-			<apply_if nightMode="true" attrColorValue="#1b293e"/>
+			<apply_if nightMode="true" attrColorValue="#42566E"/>
 		</case>
 	</renderingAttribute>
 	<renderingAttribute name="serviceHighwayOnewayArrowsColor">
 		<case roadStyle="highContrastRoads" attrColorValue="#000000"/>
 		<case attrColorValue="#a6a5a4">
-			<apply_if nightMode="true" attrColorValue="#1b293e"/>
+			<apply_if nightMode="true" attrColorValue="#42566E"/>
 		</case>
 	</renderingAttribute>
 	<renderingAttribute name="trackPathHighwayOnewayArrowsColor">
@@ -1107,7 +1107,7 @@
 			<apply_if nightMode="true" attrColorValue="#dddddd"/>
 		</case>
 		<case attrColorValue="#FDF6BE">
-			<apply_if nightMode="true" attrColorValue="#1b293e"/>
+			<apply_if nightMode="true" attrColorValue="#42566E"/>
 		</case>
 	</renderingAttribute>
 	<renderingAttribute name="waterwayArrowsColor">
@@ -2015,7 +2015,7 @@
 		<case attrColorValue="#d9d5d2"/>
 	</renderingAttribute>
 	<renderingAttribute name="taxiwayColor">
-		<case nightMode="true" attrColorValue="#1b293e"/>
+		<case nightMode="true" attrColorValue="#42566E"/>
 		<case attrColorValue="#bbbbcc"/>
 	</renderingAttribute>
 	<renderingAttribute name="apronColor">
@@ -2557,7 +2557,7 @@
 		</case>
 		<case attrColorValue="#ffffff">
 			<apply_if additional="construction=yes" attrColorValue="#cccccc"/>
-			<apply_if nightMode="true" attrColorValue="#1b293e"/>
+			<apply_if nightMode="true" attrColorValue="#42566E"/>
 		</case>
 	</renderingAttribute>-->
 	<renderingAttribute name="pedestrianTextColor">
@@ -2592,7 +2592,7 @@
 		</case>
 		<case attrColorValue="$serviceDrivewayRoadColor">
 			<apply_if additional="construction=yes" attrColorValue="#cccccc"/>
-			<apply_if nightMode="true" attrColorValue="#1b293e"/>
+			<apply_if nightMode="true" attrColorValue="#42566E"/>
 		</case>
 	</renderingAttribute>
 	<renderingConstant name="highwayTrackTextHaloRadiusDay" value="1"/>
@@ -9455,7 +9455,7 @@
 			<case minzoom="13" tag="aeroway" value="apron" color="$apronColor"/>
 			<switch minzoom="13">
 				<case tag="aeroway" value="runway" color="#bbbbcc">
-					<apply_if nightMode="true" color="#1b293e"/>
+					<apply_if nightMode="true" color="#42566E"/>
 				</case>
 				<case tag="abandoned:aeroway" value="runway" color="#77bbbbbb">
 					<apply_if nightMode="true" color="#99909090"/>
@@ -11990,7 +11990,7 @@
 			<switch minzoom="13">
 				<case minzoom="15" tag="railway" value="tram" color="#444444">
 					<apply_if minzoom="15" strokeWidth="1:1" strokeWidth__1="2:2"/>
-					<apply_if nightMode="true" color="#66ffffff" color__1="#1b293e"/>
+					<apply_if nightMode="true" color="#66ffffff" color__1="#42566E"/>
 				</case>
 				<case tag="railway" value="light_rail" minzoom="13" color="#666666" strokeWidth="1:1"/>
 				<apply_if additional="tunnel=yes" pathEffect="5_3">
@@ -12126,7 +12126,7 @@
 		<!-- Aeroway -->
 		<switch minzoom="11">
 			<case tag="aeroway" value="runway" color="#bbbbcc">
-				<apply_if nightMode="true" color="#1b293e"/>
+				<apply_if nightMode="true" color="#42566E"/>
 			</case>
 			<case tag="abandoned:aeroway" value="runway" color="#c6c7c6">
 				<apply_if nightMode="true" color="#526163"/>
