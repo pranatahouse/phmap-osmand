@@ -1941,7 +1941,7 @@
 	</renderingAttribute>
 
 	<renderingAttribute name="buildingColor">
-		<case nightMode="true" attrColorValue="#364D6B"/>
+		<case nightMode="true" attrColorValue="#26344E"/>
 		<case moreDetailed="true" attrColorValue="#C7C5C3"/>
 		<case attrColorValue="#F1F3F4"/>
 	</renderingAttribute>
