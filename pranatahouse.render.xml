@@ -8539,7 +8539,7 @@
 			<switch>
 				<switch>
 					<case minzoom="5" tag="place" value="city"/>
-					<apply_if minzoom="6" maxzoom="16" icon="place_city_dot" iconVisibleSize="22" intersectionSizeFactor="0.9" iconOrder="32"/>
+					<apply_if minzoom="6" maxzoom="16" icon="" iconVisibleSize="22" intersectionSizeFactor="0.9" iconOrder="32"/>
 					<apply>
 						<switch>
 							<switch>
@@ -8556,7 +8556,7 @@
 								<case additional="population_rounded=7000000" iconOrder="16"/>
 								<case additional="population_rounded=5000000" iconOrder="17"/>
 								<case additional="population_rounded=3000000" iconOrder="18"/>
-								<apply_if maxzoom="5" icon="place_city_dot" iconVisibleSize="1" intersectionSizeFactor="0.9"/>
+								<apply_if maxzoom="5" icon="" iconVisibleSize="1" intersectionSizeFactor="0.9"/>
 							</switch>
 							<case additional="population_rounded=2000000" iconOrder="19"/>
 							<case additional="population_rounded=1000000" iconOrder="20"/>
@@ -8578,11 +8578,11 @@
 					</apply>
 					<apply_if additional="capital=yes" iconVisibleSize="1" iconOrder="15">
 						<switch>
-							<case minzoom="5" maxzoom="5" icon="place_capital_dot_small" iconOrder="25">
-								<apply_if nightMode="true" icon="place_capital_dot_small_night"/>
+							<case minzoom="5" maxzoom="5" icon="" iconOrder="25">
+								<apply_if nightMode="true" icon=""/>
 							</case>
-							<case minzoom="6" maxzoom="16" icon="place_capital_dot">
-								<apply_if nightMode="true" icon="place_capital_dot_night"/>
+							<case minzoom="6" maxzoom="16" icon="">
+								<apply_if nightMode="true" icon=""/>
 							</case>
 							<apply>
 								<case additional="population_rounded=20000000" iconOrder="15"/>
@@ -8606,10 +8606,10 @@
 					</apply_if>
 				</switch>
 				<switch>
-					<case minzoom="7" tag="place" value="town" icon="place_town_dot" iconVisibleSize="24" iconOrder="36"/>
-					<case minzoom="$placeVillageIconMinZoom" maxzoom="$placeVillageIconMaxZoom" tag="place" value="village" icon="place_town_dot"/>
-					<case minzoom="$placeHamletIconMinZoom" maxzoom="$placeHamletIconMaxZoom" tag="place" value="hamlet" icon="place_town_dot" iconOrder="42"/>
-					<case minzoom="12" maxzoom="12" tag="place" value="farm" icon="place_town_dot"/>
+					<case minzoom="7" tag="place" value="town" icon="" iconVisibleSize="24" iconOrder="36"/>
+					<case minzoom="$placeVillageIconMinZoom" maxzoom="$placeVillageIconMaxZoom" tag="place" value="village" icon=""/>
+					<case minzoom="$placeHamletIconMinZoom" maxzoom="$placeHamletIconMaxZoom" tag="place" value="hamlet" icon="" iconOrder="42"/>
+					<case minzoom="12" maxzoom="12" tag="place" value="farm" icon=""/>
 					<apply>
 						<case additional="population_rounded=1500000000" iconOrder="6"/>
 						<case additional="population_rounded=400000000" iconOrder="7"/>
