@@ -627,13 +627,13 @@
 		<case roadStyle="americanRoadAtlas" attrColorValue="#6f4726">
 			<apply_if nightMode="true" attrColorValue="#a72202"/>
 		</case>
-		<case attrColorValue="#ffaf36">
+		<case attrColorValue="#4D6A94">
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#555555"/>
 			</case>
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
-		<case attrColorValue="#4D6A94">
+		<case attrColorValue="#904D6A94">
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#555555"/>
 			</case>

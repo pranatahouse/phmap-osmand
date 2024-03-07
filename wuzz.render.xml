@@ -537,7 +537,7 @@
 				<apply_if additional="covered=yes" attrColorValue="#33336B"/>
 			</apply_if>
 		</case>
-		<case maxzoom="7" attrColorValue="#C6481E">
+		<case maxzoom="7" attrColorValue="#AB8AD1">
 			<apply_if nightMode="true" attrColorValue="#A6384C"/>
 		</case>
 		<case attrColorValue="$motorwayRoadColor"/>
@@ -627,13 +627,13 @@
 		<case roadStyle="americanRoadAtlas" attrColorValue="#6f4726">
 			<apply_if nightMode="true" attrColorValue="#a72202"/>
 		</case>
-		<case attrColorValue="#ffaf36">
+		<case attrColorValue="#1780A0">
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#555555"/>
 			</case>
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
-		<case attrColorValue="#1780A0">
+		<case attrColorValue="#901780A0">
 			<case streetLighting="true">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#555555"/>
 			</case>
@@ -829,7 +829,7 @@
 		<case roadStyle="germanRoadAtlas" attrColorValue="#767676">
 			<apply_if nightMode="true" attrColorValue="#464646"/>
 		</case>
-		<case attrColorValue="#D8D8D8">
+		<case attrColorValue="#FAFCF9">
 		    <apply_if nightMode="true" attrColorValue="$null"/>
 			<case streetLighting="true" minzoom="14">
 				<apply_if nightMode="false" streetLightingNight="false" attrColorValue="#000000"/>
@@ -865,7 +865,7 @@
 		<case roadStyle="boldOutline" attrColorValue="#99666666">
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
-		<case attrColorValue="#D8D8D8">
+		<case attrColorValue="#FAFCF9">
 			<apply_if nightMode="true" attrColorValue="#00000000"/>
 		</case>
 	</renderingAttribute>
@@ -877,7 +877,7 @@
 		<case roadStyle="boldOutline" attrColorValue="#444444">
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
-		<case attrColorValue="#D8D8D8">
+		<case attrColorValue="#FAFCF9">
 			<apply_if nightMode="true" attrColorValue="#ff000000"/>
 		</case>
 	</renderingAttribute>
@@ -889,7 +889,7 @@
 		<case roadStyle="boldOutline" attrColorValue="#000000">
 			<apply_if nightMode="true" attrColorValue="$null"/>
 		</case>
-		<case attrColorValue="#D8D8D8">
+		<case attrColorValue="#FAFCF9">
 			<apply_if nightMode="true" attrColorValue="#000000"/>
 		</case>
 	</renderingAttribute>
