@@ -8,7 +8,7 @@ OsmAnd custom rendering style and routing. Currently, we have two styles variant
 
 **Easy way**
 
-Open OsmAnd, go to Settings, scroll to bottom, tap Import from file then select the *.osf file that you just downloaded from our release.
+Open OsmAnd, go to **Settings**, scroll to bottom, tap **Import from file** then select the ***pranatahouse-osmand-rendering-style.osf** file that you just downloaded from our release.
 
 **Manual**
 
