@@ -10,6 +10,10 @@ OsmAnd custom rendering style and routing. Currently, we have two styles variant
 
 Open OsmAnd, go to **Settings**, scroll to bottom, tap **Import from file** then select the **pranatahouse-osmand-rendering-style.osf** file that you just downloaded from our release.
 
+or
+
+Open command prompt on Windows and run the file **install-wuzz.bat** or **install-wuzz.sh** if you are using Linux.
+
 **Manual**
 
 1. Put the *.render.xml file in **/storage/emulated/0/Android/data/net.osmand.plus/files/rendering/** for OsmAnd plus or **/storage/emulated/0/Android/data/net.osmand/files/rendering/** for OsmAnd App.
