@@ -1702,12 +1702,12 @@
 
 	<renderingAttribute name="racewayColor">
 		<case attrColorValue="#CFD4D8">
-			<apply_if nightMode="true" attrColorValue="#bfaa69" />
+			<apply_if nightMode="true" attrColorValue="#424146" />
 		</case>
 	</renderingAttribute>
 	<renderingAttribute name="racewayStrokeColor">
 		<case attrColorValue="#FAFCF9">
-			<apply_if nightMode="true" attrColorValue="#50000000" />
+			<apply_if nightMode="true" attrColorValue="#444444" />
 		</case>
 	</renderingAttribute>
 	<renderingAttribute name="trackColor">
@@ -2498,13 +2498,13 @@
 		<case attrColorValue="$defaultColor" />
 	</renderingAttribute>
 	<renderingAttribute name="stadiumStrokeColor">
+        <case nightMode="true" attrColorValue="#04382c"/>
 		<case attrColorValue="#888888" />
 	</renderingAttribute>
-	<renderingAttribute name="sportsCentreColor">
-		<case nightMode="true" attrColorValue="#04382c" />
-		<case moreDetailed="true" attrColorValue="#8DE9A1" />
-		<case attrColorValue="$defaultColor" />
-	</renderingAttribute>
+    <renderingAttribute name="sportsCentreColor">
+        <case nightMode="true" attrColorValue="#04382c"/>
+        <case attrColorValue="#8DE9A1"/>
+    </renderingAttribute>
 	<renderingAttribute name="sportsCentreStrokeColor">
 		<case attrColorValue="#FAFCF9" />
 	</renderingAttribute>
@@ -16964,7 +16964,7 @@
                     tag="leisure"
                     value="sports_centre"
                     color="$sportsCentreColor"
-                    color_2="$sportsCentreStrokeColor"
+                    color_2="$stadiumStrokeColor"
                 />
 				<apply strokeWidth_2="1" />
 			</switch>
@@ -19641,10 +19641,10 @@
 
 		<case minzoom="14" tag="highway" value="raceway">
 			<case maxzoom="14" strokeWidth="1:1" shadowRadius="1" />
-			<case maxzoom="15" strokeWidth="1.5:1.5" shadowRadius="1" />
-			<case maxzoom="16" strokeWidth="2.5:2.5" shadowRadius="2" />
-			<case maxzoom="17" strokeWidth="4:4" shadowRadius="2" />
-			<case minzoom="18" strokeWidth="5:5" shadowRadius="2" />
+			<case maxzoom="15" strokeWidth="1:1" shadowRadius="1" />
+			<case maxzoom="16" strokeWidth="1:1" shadowRadius="1" />
+			<case maxzoom="17" strokeWidth="1:1" shadowRadius="1" />
+			<case minzoom="18" strokeWidth="1:1" shadowRadius="1" />
 			<apply color="$racewayColor" cap="ROUND" shadowColor="$racewayStrokeColor" />
 			<!-- for new OpenGL engine only
 			<apply_if minzoom="17">
