@@ -2398,7 +2398,7 @@
 	<renderingAttribute name="farmColor">
 		<case nightMode="true" attrColorValue="#004333" />
 		<case moreDetailed="true" attrColorValue="#E7EBCA" />
-		<case attrColorValue="#DCE2AA" />
+		<case attrColorValue="#3515ff00" />
 	</renderingAttribute>
 	<renderingAttribute name="farmyardColor">
 		<case nightMode="true" attrColorValue="#004333" />
@@ -2494,16 +2494,16 @@
 
 	<renderingAttribute name="stadiumColor">
 		<case nightMode="true" attrColorValue="#04382c" />
-		<case moreDetailed="true" attrColorValue="#8DE9A1" />
+		<case moreDetailed="true" attrColorValue="#3515ff00" />
 		<case attrColorValue="$defaultColor" />
 	</renderingAttribute>
 	<renderingAttribute name="stadiumStrokeColor">
-        <case nightMode="true" attrColorValue="#04382c"/>
+        <case nightMode="true" attrColorValue="#04382c" />
 		<case attrColorValue="#888888" />
 	</renderingAttribute>
     <renderingAttribute name="sportsCentreColor">
-        <case nightMode="true" attrColorValue="#04382c"/>
-        <case attrColorValue="#8DE9A1"/>
+        <case nightMode="true" attrColorValue="#04382c" />
+        <case attrColorValue="#3515ff00" />
     </renderingAttribute>
 	<renderingAttribute name="sportsCentreStrokeColor">
 		<case attrColorValue="#FAFCF9" />
@@ -2592,7 +2592,7 @@
 
 	<renderingAttribute name="aerodromeColor">
 		<case nightMode="true" attrColorValue="#161e2e" />
-		<case attrColorValue="#d9d5d2" />
+		<case attrColorValue="#dce7ea" />
 	</renderingAttribute>
 	<renderingAttribute name="taxiwayColor">
 		<case nightMode="true" attrColorValue="#999937" />
@@ -2600,7 +2600,7 @@
 	</renderingAttribute>
 	<renderingAttribute name="apronColor">
 		<case nightMode="true" attrColorValue="#161e2e" />
-		<case attrColorValue="#d9d5d2" />
+		<case attrColorValue="#dce7ea" />
 	</renderingAttribute>
 	<renderingAttribute name="aerowayTerminalColor">
 		<case nightMode="true" attrColorValue="#7951a2" />
@@ -2652,7 +2652,7 @@
 	</renderingAttribute>
 	<renderingAttribute name="landuseIndustrialColor">
 		<case nightMode="true" attrColorValue="#101e21" />
-		<case attrColorValue="#d9d5d2" />
+		<case attrColorValue="#dce7ea" />
 	</renderingAttribute>
 	<renderingAttribute name="portColor">
 		<case nightMode="true" attrColorValue="#44101e21" />
@@ -2718,7 +2718,7 @@
 	<renderingAttribute name="landuseLandfillColor">
 		<case nightMode="true" attrColorValue="#101e21" />
 		<case moreDetailed="true" attrColorValue="#C3B47C" />
-		<case attrColorValue="#d9d5d2" />
+		<case attrColorValue="#dce7ea" />
 	</renderingAttribute>
 	<renderingAttribute name="spoilHeapColor">
 		<case nightMode="true" attrColorValue="#66101e21" />
@@ -2728,17 +2728,17 @@
 	<renderingAttribute name="amenityEducationalColor">
 		<case nightMode="true" attrColorValue="#19202e" />
 		<case moreDetailed="true" attrColorValue="#f2f2cb" />
-		<case attrColorValue="#e5dfda" />
+		<case attrColorValue="#dce7ea" />
 	</renderingAttribute>
 	<renderingAttribute name="amenityEducationalStrokeColor">
 		<case nightMode="true" attrColorValue="$null" />
 		<case moreDetailed="true" attrColorValue="#d9d9b6" />
-		<case attrColorValue="#e5dfda" />
+		<case attrColorValue="#dce7ea" />
 	</renderingAttribute>
 	<renderingAttribute name="amenityHospitalColor">
 		<case nightMode="true" attrColorValue="#19202e" />
 		<case moreDetailed="true" attrColorValue="#F0E8D8" />
-		<case attrColorValue="#e5dfda" />
+		<case attrColorValue="#dce7ea" />
 	</renderingAttribute>
 	<renderingAttribute name="amenityHospitalStrokeColor">
 		<case nightMode="true" attrColorValue="$null" />
@@ -2747,17 +2747,17 @@
 	</renderingAttribute>
 	<renderingAttribute name="landuseAllotmentsColor">
 		<case nightMode="true" attrColorValue="#1b3638" />
-		<case attrColorValue="#DCE2AA" />
+		<case attrColorValue="#3515ff00" />
 	</renderingAttribute>
 	<renderingAttribute name="landuseAllotmentsStrokeColor">
 		<case nightMode="true" attrColorValue="#1B3B41" />
 		<case moreDetailed="true" attrColorValue="#c7cc99" />
-		<case attrColorValue="#DCE2AA" />
+		<case attrColorValue="#3515ff00" />
 	</renderingAttribute>
 	<renderingAttribute name="landuseGaragesColor">
 		<case nightMode="true" attrColorValue="#101e21" />
 		<case moreDetailed="true" attrColorValue="#d9d0ca" />
-		<case attrColorValue="#d9d5d2" />
+		<case attrColorValue="#dce7ea" />
 	</renderingAttribute>
 	<renderingAttribute name="leisureResortColor">
 		<case nightMode="true" attrColorValue="$null" />
@@ -19646,7 +19646,7 @@
 			<case maxzoom="17" strokeWidth="1:1" shadowRadius="1" />
 			<case minzoom="18" strokeWidth="1:1" shadowRadius="1" />
 			<apply color="$racewayColor" cap="ROUND" shadowColor="$racewayStrokeColor" />
-			<!-- for new OpenGL engine only 
+			<!-- for new OpenGL engine only
 			<apply_if minzoom="17">
 				<apply_if additional="oneway=yes" pathIcon="oneway_blue" pathIconStep="70"/>
 				<apply_if additional="oneway=-1" pathIcon="oneway_reverse_blue" pathIconStep="70"/>
