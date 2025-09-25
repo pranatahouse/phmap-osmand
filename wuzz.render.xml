@@ -7870,7 +7870,7 @@
 				</apply>
 			</switch>
 			<case
-                minzoom="12"
+                minzoom="16"
                 tag="leisure"
                 value="park"
                 textSize="12"
