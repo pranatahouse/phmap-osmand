@@ -2327,7 +2327,7 @@
 
 	<!-- Forest -->
 	<renderingAttribute name="woodColor">
-		<case nightMode="true" attrColorValue="#1A4B38" />
+		<case nightMode="true" attrColorValue="#04382c" />
 		<switch>
 			<case moreDetailed="true" additional="wood:age=very_young" />
 			<case moreDetailed="true" additional="wood:age=young" />
@@ -2341,7 +2341,7 @@
 		<case attrColorValue="$woodColor" />
 	</renderingAttribute>
 	<renderingAttribute name="cemeteryColor">
-		<case nightMode="true" attrColorValue="#1A4B38" />
+		<case nightMode="true" attrColorValue="#04382c" />
 		<case attrColorValue="#BEF3C9" />
 	</renderingAttribute>
 	<renderingConstant name="woodBroadleavedShader" value="wood_broadleaved3" />
@@ -2396,14 +2396,14 @@
 		<case attrColorValue="#fff7bf" />
 	</renderingAttribute>
 	<renderingAttribute name="farmColor">
-		<case nightMode="true" attrColorValue="#004333" />
+		<case nightMode="true" attrColorValue="#04382c" />
 		<case moreDetailed="true" attrColorValue="#E7EBCA" />
 		<case attrColorValue="#3515ff00" />
 	</renderingAttribute>
 	<renderingAttribute name="farmyardColor">
-		<case nightMode="true" attrColorValue="#004333" />
+		<case nightMode="true" attrColorValue="#04382c" />
 		<case moreDetailed="true" attrColorValue="#E4D0B3" />
-		<case attrColorValue="#ddbf92" />
+		<case attrColorValue="#dce7ea" />
 	</renderingAttribute>
 	<renderingAttribute name="flowerbedColor">
 		<case nightMode="true" attrColorValue="#00251C" />
@@ -2515,7 +2515,7 @@
 	</renderingAttribute>
 
 	<renderingAttribute name="gardenColor">
-		<case nightMode="true" attrColorValue="#004333" />
+		<case nightMode="true" attrColorValue="#04382c" />
 		<case moreDetailed="true" attrColorValue="#c0e5a1" />
 		<case attrColorValue="$woodColor" />
 	</renderingAttribute>
