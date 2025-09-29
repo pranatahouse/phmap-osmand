@@ -16388,7 +16388,7 @@
 			<case minzoom="11" tag="public_transport" value="station" color="#d4aaaa">
 				<apply_if nightMode="true" color="#685454" />
 			</case>
-			<switch minzoom="15" color="#44888888">
+			<switch minzoom="15" color="#dce7ea">
 				<case tag="public_transport" value="platform">
 					<apply_if additional="disused=yes">
 						<apply_if nightMode="true" color="#88666666" />
