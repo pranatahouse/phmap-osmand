@@ -10194,21 +10194,37 @@
 						<case tag="military" value="bunker" />
 						<case tag="abandoned:building" value="" />
 						<case tag="disused:building" value="" />
-						<case hideHouseNumbers="true" tag="building" value="" nameTag="" />
-						<case tag="building" value="" nameTag="" nameTag2="addr:housenumber" />
 						<case
+                            hidePOILabels="true"
+                            hideHouseNumbers="true"
+                            tag="building"
+                            value=""
+                            nameTag=""
+                        />
+						<case
+                            hidePOILabels="true"
+                            hideHouseNumbers="true"
+                            tag="building"
+                            value=""
+                            nameTag=""
+                            nameTag2="addr:housenumber"
+                        />
+						<case
+                            hidePOILabels="true"
                             hideHouseNumbers="true"
                             tag="building"
                             value=""
                             nameTag="addr:housename"
                         />
 						<case
+                            hidePOILabels="true"
+                            hideHouseNumbers="true"
                             tag="building"
                             value=""
                             nameTag="addr:housename"
                             nameTag2="addr:housenumber"
                         />
-						<apply textSize="12" />
+						<apply textSize="11" />
 					</switch>
 					<switch>
 						<case
