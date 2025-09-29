@@ -8726,7 +8726,7 @@
 
 			<!-- Emergency and Health -->
 			<switch
-                hidePOILabels="false"
+                hidePOILabels="true"
                 textSize="12"
                 nameTag=""
                 textColor="#da0092"
@@ -8800,7 +8800,7 @@
                 textWrapWidth="25"
                 textOrder="150"
             >
-				<switch hidePOILabels="false">
+				<switch hidePOILabels="true">
 					<case minzoom="17" tag="amenity" value="fuel" nameTag="" textWrapWidth="20" />
 					<case
                         minzoom="17"
@@ -9753,7 +9753,7 @@
                 textOrder="141"
             >
 				<switch>
-					<switch hidePOILabels="false">
+					<switch hidePOILabels="true">
 						<case minzoom="17" tag="tourism" value="apartment" />
 						<case minzoom="17" tag="tourism" value="guest_house" />
 						<case minzoom="17" tag="tourism" value="hostel" />
@@ -9786,7 +9786,7 @@
 
 			<!-- Tourism and Entertainment -->
 			<switch
-                hidePOILabels="false"
+                hidePOILabels="true"
                 textSize="12"
                 nameTag=""
                 textColor="$tourismTextColor"
@@ -9855,7 +9855,7 @@
                 textWrapWidth="20"
                 textOrder="158"
             >
-				<switch hidePOILabels="false">
+				<switch hidePOILabels="true">
 					<case minzoom="17" tag="historic" value="aircraft" />
 					<case minzoom="17" tag="historic" value="tank" />
 					<case minzoom="16" tag="historic" value="castle" nameTag="" textOrder="156" />
@@ -9903,7 +9903,7 @@
 
 			<!-- Other Amenities -->
 			<switch
-                hidePOILabels="false"
+                hidePOILabels="true"
                 textSize="12"
                 nameTag=""
                 textColor="$otherAmenitiesTextColorDay"
@@ -10014,7 +10014,7 @@
 
 			<!-- Office -->
 			<switch
-                hidePOILabels="false"
+                hidePOILabels="true"
                 textSize="12"
                 nameTag=""
                 textColor="$otherAmenitiesTextColorDay"
@@ -10074,7 +10074,7 @@
 				<apply_if nightMode="true" textColor="#f6dada" textHaloColor="#88a20035" />
 			</switch>
 			<case
-                hidePOILabels="false"
+                hidePOILabels="true"
                 minzoom="14"
                 tag="military"
                 value="nuclear_explosion_site"
@@ -10352,7 +10352,7 @@
 
 			<!-- Food and Drink -->
 			<switch
-                hidePOILabels="false"
+                hidePOILabels="true"
                 textSize="12"
                 nameTag=""
                 textColor="$foodTextColorDay"
@@ -10379,7 +10379,7 @@
 
 			<!-- Shops -->
 			<switch
-                hidePOILabels="false"
+                hidePOILabels="true"
                 textSize="12"
                 nameTag=""
                 textColor="$shopsTextColorDay"
@@ -10553,7 +10553,7 @@
 
 			<!-- Craft, club -->
 			<switch
-                hidePOILabels="false"
+                hidePOILabels="true"
                 textSize="12"
                 textColor="$craftTextColorDay"
                 textHaloColor="$craftTextHaloColorDay"
@@ -10583,7 +10583,7 @@
                 textOrder="166"
             >
 				<switch>
-					<switch hidePOILabels="false">
+					<switch hidePOILabels="true">
 						<case minzoom="17" tag="sport" value="american_football" />
 						<case minzoom="17" tag="sport" value="equestrian" />
 						<case minzoom="17" tag="sport" value="climbing" />
