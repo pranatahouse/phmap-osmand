@@ -6914,12 +6914,12 @@
                         textOrder="62"
                     />
 					<apply_if minzoom="13">
-						<case maxzoom="13" textSize="12" />
-						<case maxzoom="14" textSize="13" />
-						<case maxzoom="15" textSize="14" />
-						<case maxzoom="16" textSize="15" />
-						<case maxzoom="17" textSize="17" />
-						<case minzoom="18" textSize="19" />
+						<case maxzoom="13" textSize="11" />
+						<case maxzoom="14" textSize="11" />
+						<case maxzoom="15" textSize="12" />
+						<case maxzoom="16" textSize="12" />
+						<case maxzoom="17" textSize="12" />
+						<case minzoom="18" textSize="12" />
 					</apply_if>
 				</switch>
 
@@ -6944,11 +6944,11 @@
                     />
 					<case tag="highway" value="tertiary_link" textOrder="96" />
 					<apply>
-						<case maxzoom="14" textSize="12" />
-						<case maxzoom="15" textSize="13" />
-						<case maxzoom="16" textSize="14" />
-						<case maxzoom="17" textSize="16" />
-						<case minzoom="18" textSize="18" />
+						<case maxzoom="14" textSize="11" />
+						<case maxzoom="15" textSize="12" />
+						<case maxzoom="16" textSize="12" />
+						<case maxzoom="17" textSize="12" />
+						<case minzoom="18" textSize="12" />
 					</apply>
 				</switch>
 
@@ -7071,11 +7071,11 @@
                         />
 					</switch>
 					<apply textOnPath="true" nameTag="">
-						<case maxzoom="14" textSize="12" />
-						<case maxzoom="15" textSize="13" />
-						<case maxzoom="16" textSize="14" />
-						<case maxzoom="17" textSize="16" />
-						<case minzoom="18" textSize="18" />
+						<case maxzoom="14" textSize="11" />
+						<case maxzoom="15" textSize="12" />
+						<case maxzoom="16" textSize="12" />
+						<case maxzoom="17" textSize="12" />
+						<case minzoom="18" textSize="12" />
 					</apply>
 				</switch>
 
@@ -7130,10 +7130,10 @@
                         textOnPath="true"
                     />
 					<apply_if minzoom="15">
-						<case maxzoom="15" textSize="13" />
-						<case maxzoom="16" textSize="14" />
-						<case maxzoom="17" textSize="16" />
-						<case minzoom="18" textSize="18" />
+						<case maxzoom="15" textSize="12" />
+						<case maxzoom="16" textSize="12" />
+						<case maxzoom="17" textSize="12" />
+						<case minzoom="18" textSize="12" />
 						<apply_if nightMode="true" textColor="#CFD4D8" textHaloColor="#77777777" />
 					</apply_if>
 				</switch>
@@ -7156,10 +7156,10 @@
                         textHaloColor="$pedestrianRoadColor"
                     />
 					<apply>
-						<case maxzoom="15" textSize="13" />
-						<case maxzoom="16" textSize="14" />
-						<case maxzoom="17" textSize="16" />
-						<case minzoom="18" textSize="18" />
+						<case maxzoom="15" textSize="12" />
+						<case maxzoom="16" textSize="12" />
+						<case maxzoom="17" textSize="12" />
+						<case minzoom="18" textSize="12" />
 					</apply>
 					<apply textHaloRadius="$textHaloRadius" />
 				</switch>
@@ -7175,9 +7175,9 @@
                     textOrder="225"
                 >
 					<apply>
-						<case maxzoom="16" textSize="14" />
-						<case maxzoom="17" textSize="16" />
-						<case minzoom="18" textSize="18" />
+						<case maxzoom="16" textSize="12" />
+						<case maxzoom="17" textSize="12" />
+						<case minzoom="18" textSize="12" />
 					</apply>
 					<apply_if nightMode="true" textColor="#888888" textHaloColor="#77777777" />
 				</case>
@@ -7285,7 +7285,7 @@
 					<apply_if minzoom="15" maxzoom="15" textSize="9" />
 					<apply_if minzoom="16" maxzoom="16" textSize="10" />
 					<apply_if minzoom="17" maxzoom="17" textSize="12" />
-					<apply_if minzoom="18" textSize="14" />
+					<apply_if minzoom="18" textSize="12" />
 				</switch>
 			</switch>
 
