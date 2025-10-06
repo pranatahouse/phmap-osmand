@@ -6916,10 +6916,10 @@
 					<apply_if minzoom="13">
 						<case maxzoom="13" textSize="11" />
 						<case maxzoom="14" textSize="11" />
-						<case maxzoom="15" textSize="12" />
-						<case maxzoom="16" textSize="12" />
-						<case maxzoom="17" textSize="12" />
-						<case minzoom="18" textSize="12" />
+						<case maxzoom="15" textSize="11" />
+						<case maxzoom="16" textSize="11" />
+						<case maxzoom="17" textSize="11" />
+						<case minzoom="18" textSize="11" />
 					</apply_if>
 				</switch>
 
