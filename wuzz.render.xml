@@ -8664,7 +8664,7 @@
                         textOrder="168"
                     />
 					<case minzoom="14" tag="leisure" value="common" textOrder="169" />
-					<switch>
+					<switch hidePOILabels="true">
 						<case minzoom="12" tag="leisure" value="golf_course" textOrder="167" />
 						<case minzoom="14" tag="leisure" value="pitch" textOrder="254" />
 						<case minzoom="14" tag="leisure" value="bleachers" textOrder="254" />
