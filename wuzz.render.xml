@@ -1470,7 +1470,7 @@
 	</renderingAttribute>
 
 	<renderingAttribute name="serviceHighwayAreaColor">
-		<case attrColorValue="#E4DBB4">
+		<case attrColorValue="#ebedef">
 			<apply_if nightMode="true" attrColorValue="#424146" />
 		</case>
 	</renderingAttribute>
@@ -1554,7 +1554,7 @@
 				<apply_if additional="covered=yes" attrColorValue="#807A5E" />
 			</apply_if>
 		</case>
-		<case attrColorValue="#E4DBB4">
+		<case attrColorValue="#ebedef">
 			<apply_if moreDetailed="true" attrColorValue="#E8E8E8" />
 			<apply_if additional="tunnel=yes" attrColorValue="#F2F2F2" />
 			<apply_if additional="covered=yes" attrColorValue="#F2F2F2" />
@@ -1567,7 +1567,7 @@
 		<case roadStyle="boldOutline" attrColorValue="#000000">
 			<apply_if nightMode="true" attrColorValue="$null" />
 		</case>
-		<case attrColorValue="#D2CDB7">
+		<case attrColorValue="#dde1e3">
 			<apply_if nightMode="true" attrColorValue="#20000000" />
 		</case>
 	</renderingAttribute>
@@ -1593,7 +1593,7 @@
 
 	<!-- NOTE: Road is usually public, while service road is not, that's why we should mabye use the residential and not service road color pattern here: -->
 	<renderingAttribute name="roadRoadColor">
-		<case attrColorValue="#E4DBB4">
+		<case attrColorValue="#ebedef">
 			<apply_if nightMode="true" attrColorValue="#555555" />
 		</case>
 	</renderingAttribute>
