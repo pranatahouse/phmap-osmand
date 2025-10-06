@@ -3698,8 +3698,8 @@
 	<renderingConstant name="waterTextHaloRadiusDay" value="1" />
 
 	<renderingAttribute name="waterTextColor">
-		<case nightMode="true" attrColorValue="#7FC4D9" />
-		<case attrColorValue="#CFD4D8" />
+		<case nightMode="true" attrColorValue="#CFD4D8" />
+		<case attrColorValue="#4563a7" />
 	</renderingAttribute>
 	<renderingAttribute name="waterTextHaloColor">
 		<case nightMode="true" attrColorValue="#994563a7" />
