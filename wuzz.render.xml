@@ -8134,19 +8134,11 @@
 					</case>
 					<switch>
 						<case minzoom="5" tag="place" value="sea" textWrapWidth="20" textOrder="33" />
-						<case
-                            minzoom="6"
-                            tag="natural"
-                            value="water"
-                            nameTag=""
-                            textWrapWidth="17"
-                            textOrder="178"
-                            intersectionSizeFactor="1.7"
-                        />
+						<case minzoom="12" tag="natural" value="water" nameTag="" textWrapWidth="17" textOrder="178" intersectionSizeFactor="1.7" />
 						<apply_if minzoom="6" textSize="13" />
 					</switch>
 					<case
-                        minzoom="8"
+                        minzoom="12"
                         tag="natural"
                         value="bay"
                         textOnPath="true"
@@ -8189,7 +8181,7 @@
                         nameTag=""
                     />
 					<case
-                        minzoom="11"
+                        minzoom="14"
                         tag="waterway"
                         value="river"
                         textOnPath="true"
@@ -8198,7 +8190,7 @@
                         nameTag=""
                     />
 					<case
-                        minzoom="13"
+                        minzoom="14"
                         tag="waterway"
                         value="canal"
                         textOnPath="true"
