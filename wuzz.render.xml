@@ -7921,7 +7921,7 @@
                         textSize="11"
                     />
 					<case
-                        hidePOILabels="false"
+                        hidePOILabels="true"
                         minzoom="16"
                         textSize="12"
                         tag="natural"
@@ -8074,7 +8074,7 @@
 						<apply_if legend="true" textOnPath="true" />
 					</case>
 					<case
-                        hidePOILabels="false"
+                        hidePOILabels="true"
                         minzoom="16"
                         textSize="14"
                         tag="natural"
@@ -8217,7 +8217,7 @@
                         textOrder="185"
                     />
 					<case
-                        hidePOILabels="false"
+                        hidePOILabels="true"
                         minzoom="17"
                         tag="waterway"
                         value="dock"
@@ -8264,7 +8264,7 @@
                         textOrder="208"
                     />
 					<case
-                        hidePOILabels="false"
+                        hidePOILabels="true"
                         minzoom="17"
                         tag="natural"
                         value="spring"
@@ -8273,7 +8273,7 @@
                         textOrder="214"
                     />
 					<case
-                        hidePOILabels="false"
+                        hidePOILabels="true"
                         minzoom="16"
                         tag="natural"
                         value="hot_spring"
@@ -8282,7 +8282,7 @@
                         textOrder="215"
                     />
 					<case
-                        hidePOILabels="false"
+                        hidePOILabels="true"
                         minzoom="16"
                         tag="natural"
                         value="geyser"
@@ -8291,7 +8291,7 @@
                         textOrder="216"
                     />
 					<case
-                        hidePOILabels="false"
+                        hidePOILabels="true"
                         minzoom="16"
                         tag="natural"
                         value="blowhole"
@@ -8299,7 +8299,7 @@
                         textWrapWidth="20"
                         textOrder="217"
                     />
-					<switch hidePOILabels="false" minzoom="15">
+					<switch hidePOILabels="true" minzoom="15">
 						<case
                             tag="waterway"
                             value="waterfall"
@@ -8436,9 +8436,9 @@
 						<case minzoom="15" tag="landuse" value="retail" />
 						<case minzoom="15" tag="landuse" value="commercial" />
 						<case minzoom="19" tag="landuse" value="flowerbed" />
-						<case hidePOILabels="false" minzoom="12" tag="power" value="plant" />
+						<case hidePOILabels="true" minzoom="12" tag="power" value="plant" />
 						<case
-                            hidePOILabels="false"
+                            hidePOILabels="true"
                             minzoom="15"
                             tag="power"
                             value="generator"
@@ -8454,7 +8454,7 @@
 						<case minzoom="14" tag="landuse" value="allotments" nameTag="" />
 						<case minzoom="12" tag="landuse" value="quarry" nameTag="" />
 						<case
-                            hidePOILabels="false"
+                            hidePOILabels="true"
                             minzoom="14"
                             tag="landuse"
                             value="landfill"
@@ -8464,13 +8464,13 @@
 						<case minzoom="16" tag="wood:lost" value="dead_wood" />
 						<case minzoom="16" tag="wood:lost" value="windfall" />
 						<case minzoom="13" tag="man_made" value="spoil_heap" />
-						<case hidePOILabels="false" minzoom="16" tag="power" value="substation" />
-						<case hidePOILabels="false" minzoom="18" tag="power" value="transformer" />
-						<case hidePOILabels="false" minzoom="18" tag="power" value="terminal" />
+						<case hidePOILabels="true" minzoom="16" tag="power" value="substation" />
+						<case hidePOILabels="true" minzoom="18" tag="power" value="transformer" />
+						<case hidePOILabels="true" minzoom="18" tag="power" value="terminal" />
 						<case minzoom="15" tag="man_made" value="wastewater_plant" nameTag="" />
 						<case minzoom="18" tag="highway" value="toll_gantry" />
 						<case legend="true" minzoom="18" tag="highway" value="traffic_mirror" />
-						<case hidePOILabels="false" minzoom="19" tag="highway" value="traffic_mirror" />
+						<case hidePOILabels="true" minzoom="19" tag="highway" value="traffic_mirror" />
 						<case
                             minzoom="15"
                             tag="landuse"
@@ -8539,7 +8539,7 @@
 						<case minzoom="7" tag="natural" value="desert" textSize="11" />
 						<!-- <case minzoom="14" tag="natural" value="mud" textOrder="245"/>-->
 						<case
-                            hidePOILabels="false"
+                            hidePOILabels="true"
                             minzoom="9"
                             tag="landuse"
                             value="forest"
@@ -8587,7 +8587,7 @@
                             textOrder="103"
                         />
 						<case
-                            hidePOILabels="false"
+                            hidePOILabels="true"
                             minzoom="18"
                             tag="natural"
                             value="tree"
@@ -8605,7 +8605,7 @@
                             textOrder="252"
                         />
 						<case
-                            hidePOILabels="false"
+                            hidePOILabels="true"
                             minzoom="18"
                             tag="natural"
                             value="stone"
@@ -8657,7 +8657,7 @@
 						<apply_if engine_v1="false" textDy="0" />
 					</switch>
 					<case
-                        hidePOILabels="false"
+                        hidePOILabels="true"
                         minzoom="12"
                         tag="leisure"
                         value="garden"
@@ -8932,7 +8932,7 @@
             >
 				<apply_if nightMode="true" textColor="#663e203e" textHaloColor="#ffcdfe" />
 			</case>
-			<switch hidePOILabels="false">
+			<switch hidePOILabels="true">
 				<case minzoom="15" tag="leisure" value="marina" textSize="12" textOrder="174" />
 				<apply
                     textColor="#0000bb"
@@ -9234,7 +9234,7 @@
 
 			<!-- Railroad, public transport -->
 			<switch
-                hidePOILabels="false"
+                hidePOILabels="true"
                 textColor="$railwayPOITextColorDay"
                 textWrapWidth="25"
                 textHaloRadius="$textHaloRadius"
@@ -9561,7 +9561,7 @@
 					<case additional="color_black" textHaloColor="#88000000" />
 				</apply_if>
 			</switch>
-			<switch hidePOILabels="false" minzoom="14">
+			<switch hidePOILabels="true" minzoom="14">
 				<case
                     tag="railway"
                     value="station"
@@ -9599,7 +9599,7 @@
 				</apply_if>
 				<apply_if minzoom="15" engine_v1="true" textDy="4" />
 			</switch>
-			<switch hidePOILabels="false">
+			<switch hidePOILabels="true">
 				<case
                     minzoom="16"
                     tag="railway"
@@ -9657,7 +9657,7 @@
                     textOrder="231"
                 />
 				<switch
-                    hidePOILabels="false"
+                    hidePOILabels="true"
                     minzoom="17"
                     tag="aeroway"
                     value="gate"
@@ -9676,7 +9676,7 @@
                 />
 				<apply_if nightMode="true" textColor="#c7e4ff" textHaloColor="#99444444" />
 			</switch>
-			<switch hidePOILabels="false" minzoom="11">
+			<switch hidePOILabels="true" minzoom="11">
 				<case tag="aeroway" value="aerodrome" nameTag="" textOrder="65">
 				</case>
 				<case
@@ -9709,7 +9709,7 @@
 				</apply>
 			</switch>
 			<case
-                hidePOILabels="false"
+                hidePOILabels="true"
                 minzoom="13"
                 tag="aeroway"
                 value="spaceport"
@@ -9770,7 +9770,7 @@
 					<case minzoom="16" tag="leisure" value="resort" />
 					<apply_if nightMode="true" textHaloColor="#55234ca7" />
 				</switch>
-				<switch hidePOILabels="false" textOrder="142" nameTag2="ele">
+				<switch hidePOILabels="true" textOrder="142" nameTag2="ele">
 					<case minzoom="16" tag="tourism" value="chalet" />
 					<case minzoom="13" tag="tourism" value="alpine_hut" textOrder="43" />
 					<case minzoom="15" tag="tourism" value="cabin" />
@@ -10088,7 +10088,7 @@
 				<apply_if nightMode="true" textColor="#eeeeee" textHaloColor="#77555555" />
 			</case>
 			<switch
-                hidePOILabels="false"
+                hidePOILabels="true"
                 textSize="11"
                 nameTag=""
                 textColor="#444444"
