@@ -10863,14 +10863,7 @@
                     textSize="12"
                     textOrder="85"
                 />
-				<case
-                    minzoom="15"
-                    tag="tourism"
-                    value="attraction"
-                    nameTag=""
-                    textSize="13"
-                    textOrder="84"
-                >
+				<case hidePOILabels="true" minzoom="15" tag="tourism" value="attraction" nameTag="" textSize="11" textOrder="84" >
 					<apply_if maxzoom="15" textSize="12" textWrapWidth="15" />
 				</case>
 				<case
