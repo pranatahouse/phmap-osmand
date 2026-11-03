@@ -16,8 +16,20 @@ Open command prompt on Windows and run the file **install-wuzz.bat** or **instal
 
 **Manual**
 
-1. Put the *.render.xml file in **/storage/emulated/0/Android/data/net.osmand.plus/files/rendering/** for OsmAnd plus or **/storage/emulated/0/Android/data/net.osmand/files/rendering/** for OsmAnd App.
+1. Put the *.render.xml file from the **styles/** folder in **/storage/emulated/0/Android/data/net.osmand.plus/files/rendering/** for OsmAnd plus or **/storage/emulated/0/Android/data/net.osmand/files/rendering/** for OsmAnd App.
 2. Open OsmAnd app and select **Configure Map > Map rendering > Map style** than select **Pranatahouse** or **Phmaps**.
+
+# Build the .osf package
+
+The importable **.osf** bundle is built from the rendering styles in **styles/**:
+
+```sh
+./build-osf.sh                              # -> OsmAnd-Custom-Map-Styles.osf
+./build-osf.sh OUTPUT.osf                   # choose another output name
+./build-osf.sh OUTPUT.osf wuzz.render.xml   # only the listed styles
+```
+
+By default it packages **pranatahouse.render.xml** and **wuzz.render.xml**. Only **zip** is required.
 
 # Custom Routing Installation
 
