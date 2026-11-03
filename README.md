@@ -31,6 +31,21 @@ The importable **.osf** bundle is built from the rendering styles in **styles/**
 
 By default it packages **pranatahouse.render.xml** and **wuzz.render.xml**. Only **zip** is required.
 
+# Release
+
+Releases are published by the **Release rendering styles (.osf)** GitHub Actions workflow
+(**Actions > Release rendering styles (.osf) > Run workflow**). It runs **on demand only** -
+it never triggers automatically on push.
+
+| Input | Description |
+| --- | --- |
+| **version** | Version to release, e.g. `1.1`. Leave empty to bump the latest release automatically. |
+| **dry_run** | Build the .osf only, without creating the release. |
+
+The workflow builds the .osf, creates the version tag, publishes the
+**pranatahouse-osmand-rendering-style.osf** asset as a GitHub release and updates the
+**VERSION** file in the repository.
+
 # Custom Routing Installation
 
 1. Put the routing.xml file in **/storage/emulated/0/Android/data/net.osmand.plus/files/routing/** for OsmAnd plus or **/storage/emulated/0/Android/data/net.osmand/files/routing/** for OsmAnd App.

@@ -1,0 +1,158 @@
+name: Release rendering styles (.osf)
+
+# Manual only: the workflow never runs on push or on tag creation.
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to release (e.g. 1.1). Leave empty to bump the latest release automatically."
+        required: false
+        type: string
+        default: ""
+      dry_run:
+        description: "Build the .osf only, do not create the release."
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+# Two runs must not create the same version at the same time.
+concurrency:
+  group: release-osf
+  cancel-in-progress: false
+
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  ASSET_NAME: pranatahouse-osmand-rendering-style.osf
+
+jobs:
+  release:
+    name: Build .osf and publish release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Resolve version
+        id: ver
+        env:
+          REQUESTED_VERSION: ${{ inputs.version }}
+        run: |
+          set -euo pipefail
+
+          requested="$REQUESTED_VERSION"
+          latest=''
+          if gh release view --json tagName >/dev/null 2>&1; then
+            latest=$(gh release view --json tagName --jq '.tagName')
+          fi
+
+          if [ -n "$requested" ]; then
+            version="${requested#v}"
+          elif [ -n "$latest" ]; then
+            # Bump the latest release: patch for x.y.z, minor for x.y, major for x.
+            base="${latest#v}"
+            IFS='.' read -r -a parts <<< "$base"
+            major="${parts[0]:-0}"
+            minor="${parts[1]:-}"
+            patch="${parts[2]:-}"
+            if [ -n "$patch" ]; then
+              version="$major.$minor.$((patch + 1))"
+            elif [ -n "$minor" ]; then
+              version="$major.$((minor + 1))"
+            else
+              version="$((major + 1)).0"
+            fi
+          else
+            version="1.0"
+          fi
+
+          if ! printf '%s' "$version" | grep -Eq '^[0-9]+(\.[0-9]+)*$'; then
+            echo "::error::Invalid version '$version'"
+            exit 1
+          fi
+
+          if git ls-remote --exit-code --tags origin "refs/tags/$version" >/dev/null 2>&1; then
+            echo "::error::Tag $version already exists - bump to a newer version."
+            exit 1
+          fi
+
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "previous=${latest:-none}" >> "$GITHUB_OUTPUT"
+          echo "Releasing version $version (previous: ${latest:-none})"
+
+      - name: Build the .osf package
+        run: |
+          set -euo pipefail
+          ./build-osf.sh "$ASSET_NAME"
+          unzip -l "$ASSET_NAME"
+
+      - name: Write release notes
+        run: |
+          set -euo pipefail
+          {
+            echo "OsmAnd custom rendering style collections from pranatahouse."
+            echo
+            for style in styles/*.render.xml; do
+              name=$(basename "$style")
+              echo "- [$name](https://github.com/$GITHUB_REPOSITORY/blob/$GITHUB_REF_NAME/styles/$name)"
+            done
+          } > release-notes.md
+          cat release-notes.md
+
+      - name: Create release
+        if: ${{ !inputs.dry_run }}
+        env:
+          VERSION: ${{ steps.ver.outputs.version }}
+        run: |
+          set -euo pipefail
+          version="$VERSION"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -a "$version" -m "$version"
+          git push origin "refs/tags/$version"
+
+          gh release create "$version" \
+            --title "$version" \
+            --notes-file release-notes.md \
+            "$ASSET_NAME"
+
+      - name: Update VERSION file
+        if: ${{ !inputs.dry_run }}
+        continue-on-error: true
+        env:
+          VERSION: ${{ steps.ver.outputs.version }}
+        run: |
+          set -euo pipefail
+          version="$VERSION"
+          printf '%s\n' "$version" > VERSION
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add VERSION
+          git commit -m "Bump version to $version"
+          git push origin "HEAD:$GITHUB_REF_NAME"
+
+      - name: Summary
+        if: ${{ always() }}
+        env:
+          VERSION: ${{ steps.ver.outputs.version }}
+          PREVIOUS: ${{ steps.ver.outputs.previous }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          {
+            echo "### Release $VERSION"
+            echo
+            echo "- previous: \`$PREVIOUS\`"
+            echo "- version: \`$VERSION\`"
+            if [ "$DRY_RUN" = 'true' ]; then
+              echo "- dry run: **no release was created**"
+            else
+              echo "- release: https://github.com/$GITHUB_REPOSITORY/releases/tag/$VERSION"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
